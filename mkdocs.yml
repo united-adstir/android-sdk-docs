@@ -1,0 +1,128 @@
+site_name: "adstir Integration Guide for Android"
+theme:
+  name: 'material'
+  language: 'ja'
+  palette:
+    primary: 'white'
+    accent: 'white'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+    tabs: true
+  custom_dir: 'custom_dir'
+  logo: 'images/adstir_icon.ico'
+
+use_directory_urls: false
+
+extra:
+  language: 'jp'
+  version:
+    adcolony: 4.1.0
+    adcorsa: 2.0.0
+    applovin: 9.10.5
+    facebook: 5.6.0
+    imobile: 2.0.20
+    maio: 1.1.10
+    mobvista: 10.1.71
+    mopub: 5.10.0
+    nend: 5.3.0
+    tapjoy: 12.3.4
+    unityads: 3.3.0
+    zucks: 4.6.1
+  sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.14.6-SampleApp.zip'
+
+# CSSの設定
+extra_css:
+  - css/custom.css
+
+# 拡張機能の設定
+markdown_extensions:
+  - admonition # 警告文出せるやつ
+  - footnotes
+  - pymdownx.superfences
+  - codehilite:
+      linenums: false
+  - meta
+  - toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      permalink: true
+      anchorlink: true
+  - pymdownx.tasklist:  
+      custom_checkbox: true
+  - pymdownx.details
+
+nav:
+  - スタートガイド: index.md
+  - adstir: 
+      - はじめに: adstir/index.md
+      - 初期設定: 
+        - SDKの組み込み:
+          - Android Studioによる組み込み: adstir/init/android_studio_integration.md
+          - 手動組み込み: adstir/init/manual_integration.md
+      - 対応ネットワーク: 
+        - 対応ネットワーク一覧: adstir/network/index.md
+        - AdColony: adstir/network/adcolony.md
+        - AdCorsa: adstir/network/adcorsa.md
+        - AppLovin: adstir/network/applovin.md
+        - imobile: adstir/network/imobile.md
+        - maio: adstir/network/maio.md
+        - Mobvista: adstir/network/mobvista.md
+        - MoPub: adstir/network/mopub.md
+        - nend: adstir/network/nend.md
+        - TapJoy: adstir/network/tapjoy.md
+        - UnityAds: adstir/network/unityads.md
+        - Zucks: adstir/network/zucks.md
+
+      - 広告の実装:
+        - バナー: adstir/ad/banner.md
+        - スワイプインタースティシャル: adstir/ad/swipe.md
+        - ネイティブ: 
+          - ネイティブライクバナー: adstir/ad/native/native_banner.md
+          - フルカスタマイズ: adstir/ad/native/custom.md
+          - ネイティブ動画: adstir/ad/native/native_video.md
+        - 動画リワード: 
+          - 実装: adstir/ad/reward/index.md
+          - リワードコールバック: adstir/ad/reward/callback.md
+        - 全画面インタースティシャル: adstir/ad/interstitial.md
+      - APIリファレンス: 
+        - 一覧: adstir/api/index.md
+        - バナー:
+          - AdstirMraidView: adstir/api/banner/AdstirMraidView-Class-Reference.md
+          - AdSize: adstir/api/banner/AdSize-Class-Reference.md
+          - Listener: adstir/api/banner/Listener-Class-Reference.md
+        - スワイプインタースティシャル:
+          - AdstirFullscreenView: adstir/api/swipe/AdstirFullscreenView-Class-Reference.md
+          - AdstirFullscreenListener: adstir/api/swipe/AdstirFullscreenListener-Class-Reference.md
+        - ネイティブ:
+          - AdstirNativeAd: adstir/api/native/AdstirNativeAd-Class-Reference.md
+          - AdstirNativeAdListener: adstir/api/native/AdstirNativeAdListener-Interface-Reference.md
+          - AdstirNativeAdResponse: adstir/api/native/AdstirNativeAdResponse-Class-Reference.md
+          - AdstirLoadImageListener: adstir/api/native/AdstirLoadImageListener-Interface-Reference.md
+          - AdstirLoadIconListener: adstir/api/native/AdstirLoadIconListener-Interface-Reference.md
+          - ネイティブ動画:
+            - AdstirNativeVideoAd: adstir/api/native/video/AdstirNativeVideoAd-Class-Reference.md
+            - AdstirNativeVideoView: adstir/api/native/video/AdstirNativeVideoView-Class-Reference.md
+            - AdstirNativeVideoListener: adstir/api/native/video/AdstirNativeVideoListener-Interface-Reference.md
+        - 動画リワード/全画面インタースティシャルの初期化:
+          - AdstirVideoAds: adstir/api/AdstirVideoAds-Class-Reference.md
+        - 動画リワード:
+          - AdstirVideoReward: adstir/api/reward/AdstirVideoReward-Class-Reference.md
+          - AdstirVideoRewardListener: adstir/api/reward/AdstirVideoRewardListener-Interface-Reference.md
+        - 全画面インタースティシャル:
+          - AdstirInterstitial: adstir/api/interstitial/AdstirInterstitial-Class-Reference.md
+          - AdstirInterstitialListener: adstir/api/interstitial/AdstirInterstitialListener-Interface-Reference.md
+      - よくある質問: adstir/question.md
+  - AdMob: 
+      - はじめに: admob/index.md
+      - AdMobメディエーション: admob/network.md
+      - よくある質問: admob/question.md
+  - APS:
+      - APSの初期設定: aps/init.md
+      - AdMobバナー: aps/banner.md
+      - AdMobインタースティシャル: aps/interstitial.md
+  - 変更履歴: changelog.md
+
+plugins:
+  - search
+  - markdownextradata: {}

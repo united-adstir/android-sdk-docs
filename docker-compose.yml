@@ -1,0 +1,13 @@
+version: '2'
+services:
+  mkdocs:
+    image: squidfunk/mkdocs-material:4.6.0
+    container_name: mkdocs
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/docs
+    tty: true
+    environment:
+      - GITHUB_ACTIONS=$GITHUB_ACTIONS
+    entrypoint: /bin/sh /docs/entrypoint.sh
