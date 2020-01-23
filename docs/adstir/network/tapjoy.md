@@ -32,27 +32,3 @@ TapJoyのSDKは、VideoAdSDKBundledのパッケージに同梱されておりま
 
 1. File -> New -> New Module -> Import .JAR/.AAR Package より`tapjoyconnectlibrary.jar`, `androidwebviewmediation-adapter-tapjoy.aar`を追加します。
 2. File -> Project Structure -> Dependencies -> app より`tapjoyconnectlibrary`, `androidwebviewmediation-adapter-tapjoy`を追加します。
-
-## ProGuardの設定
-ProGuardを使用しているアプリにはproguard-rules.proに、下記の内容を追加してください。  
-この記述が無い場合、adstirの機能を正常に利用することができません。
-
-```
--keep class com.tapjoy.** { *; }
--keepattributes JavascriptInterface
--keep class * extends java.util.ListResourceBundle {
-protected Object[][] getContents();
-}
--keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
-public static final *** NULL;
-}
--keepnames @com.google.android.gms.common.annotation.KeepName class *
--keepclassmembernames class * {
-@com.google.android.gms.common.annotation.KeepName *;
-}
--keepnames class * implements android.os.Parcelable {
-public static final ** CREATOR;
-}
--keep class com.google.android.gms.ads.identifier.** { *; }
--dontwarn com.tapjoy.internal.**
-```

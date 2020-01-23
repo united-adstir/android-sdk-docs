@@ -46,11 +46,3 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }
 ```
-## ProGuardの設定
-ProGuardを使用しているアプリにはproguard-rules.proに、下記の内容を追加してください。  
-この記述が無い場合、adstirの機能を正常に利用することができません。
-
-```
--keep class net.nend.** {*;}
--dontwarn net.nend.**
-```
