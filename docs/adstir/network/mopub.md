@@ -19,7 +19,7 @@ android {
 
 repositories {
     maven { url 'http://cdnp.ad-stir.com/m2' }
-    maven { url 'https://imobile-maio.github.io/maven' }
+    maven { url 'https://s3.amazonaws.com/moat-sdk-builds' }
 }
 
 dependencies {
