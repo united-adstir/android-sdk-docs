@@ -562,13 +562,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#proguardの設定" class="md-nav__link">
-    ProGuardの設定
-  </a>
-  
-</li>
-      
       
       
       
@@ -1420,13 +1413,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#proguardの設定" class="md-nav__link">
-    ProGuardの設定
-  </a>
-  
-</li>
-      
       
       
       
@@ -1472,27 +1458,6 @@
 <li>File -&gt; New -&gt; New Module -&gt; Import .JAR/.AAR Package より<code>tapjoyconnectlibrary.jar</code>, <code>androidwebviewmediation-adapter-tapjoy.aar</code>を追加します。</li>
 <li>File -&gt; Project Structure -&gt; Dependencies -&gt; app より<code>tapjoyconnectlibrary</code>, <code>androidwebviewmediation-adapter-tapjoy</code>を追加します。</li>
 </ol>
-<h2 id="proguardの設定"><a class="toclink" href="#proguardの設定">ProGuardの設定</a><a class="headerlink" href="#proguardの設定" title="Permanent link">&para;</a></h2>
-<p>ProGuardを使用しているアプリにはproguard-rules.proに、下記の内容を追加してください。<br />
-この記述が無い場合、adstirの機能を正常に利用することができません。</p>
-<div class="codehilite"><pre><span></span><span class="err">-keep class com.tapjoy.** { *; }</span>
-<span class="err">-keepattributes JavascriptInterface</span>
-<span class="err">-keep class * extends java.util.ListResourceBundle {</span>
-<span class="err">protected Object[][] getContents();</span>
-<span class="err">}</span>
-<span class="err">-keep public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {</span>
-<span class="err">public static final *** NULL;</span>
-<span class="err">}</span>
-<span class="err">-keepnames @com.google.android.gms.common.annotation.KeepName class *</span>
-<span class="err">-keepclassmembernames class * {</span>
-<span class="err">@com.google.android.gms.common.annotation.KeepName *;</span>
-<span class="err">}</span>
-<span class="err">-keepnames class * implements android.os.Parcelable {</span>
-<span class="err">public static final ** CREATOR;</span>
-<span class="err">}</span>
-<span class="err">-keep class com.google.android.gms.ads.identifier.** { *; }</span>
-<span class="err">-dontwarn com.tapjoy.internal.**</span>
-</pre></div>
                 
                   
                 
