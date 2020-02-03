@@ -1,7 +1,7 @@
 # Amazon Publisher Services(APS)のバナー広告の導入
 
 !!! Warning "はじめに"
-    APS SDKの初期化が必要です。[APSの設定](/aps/init)をご覧になり、SDKの初期化を先におこなってください。
+    APS SDKの初期化が必要です。[APSの設定](init.md)をご覧になり、SDKの初期化を先におこなってください。
 
 ## APSバナーへのリクエストを行う
 
