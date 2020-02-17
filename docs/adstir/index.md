@@ -12,6 +12,10 @@ adstirのインテグレーションガイドです。Android Studioに対応し
 * Android Studio 3.2以上
 * minSdkVersion 14以上
 * compileSdkVersion 28以上
+* AndroidX 必須
+
+!!! Info
+    [こちら](https://developer.android.com/jetpack/androidx/migrate?hl=ja#migrate)を参考にAndroidXへ移行してください。
 
 ## プロジェクトへSDKを組み込む
 

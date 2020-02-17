@@ -11,7 +11,7 @@ Android 4.4以上
 
 ```groovy hl_lines="6 16"
 repositories {
-    maven { url 'http://cdnp.ad-stir.com/m2' }
+    maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' }
 }
 

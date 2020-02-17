@@ -5,7 +5,7 @@
 
 ```groovy hl_lines="5 9"
 repositories {
-    maven { url 'http://cdnp.ad-stir.com/m2' }
+    maven { url 'https://cdnp.ad-stir.com/m2' }
 }
 
 dependencies {
@@ -25,7 +25,7 @@ dependencies {
 
 ```groovy hl_lines="11 15"
 repositories {
-    maven { url 'http://cdnp.ad-stir.com/m2' }
+    maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url 'https://adcolony.bintray.com/AdColony' } // adcolony
     maven { url 'https://github.com/glossom-dev/GlossomAds-Android/raw/master' } // adcorsa
     maven { url 'https://imobile-maio.github.io/maven' } // maio

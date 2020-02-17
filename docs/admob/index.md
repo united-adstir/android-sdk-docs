@@ -5,6 +5,10 @@
 - Android Studio 3.2以上  
 - minSdkVersion 14以上  
 - compileSdkVersion 28以上  
+- AndroidX 必須
+
+!!! Info
+    [こちら](https://developer.android.com/jetpack/androidx/migrate?hl=ja#migrate)を参考にAndroidXへ移行してください。
 
 ## 事前準備
 
@@ -20,7 +24,7 @@ Google Mobile Ads SDKは17.2.0以上をお使いください。
 
 ```groovy hl_lines="11 15"
 repositories {
-    maven { url 'http://cdnp.ad-stir.com/m2' }
+    maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url 'https://adcolony.bintray.com/AdColony' } // adcolony
     maven { url 'https://github.com/glossom-dev/GlossomAds-Android/raw/master' } // adcorsa
     maven { url 'https://imobile-maio.github.io/maven' } // maio

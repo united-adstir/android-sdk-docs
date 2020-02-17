@@ -18,7 +18,7 @@ android {
 }
 
 repositories {
-    maven { url 'http://cdnp.ad-stir.com/m2' }
+    maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url 'https://s3.amazonaws.com/moat-sdk-builds' }
 }
 
