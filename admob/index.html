@@ -1460,7 +1460,12 @@
 <li>Android Studio 3.2以上  </li>
 <li>minSdkVersion 14以上  </li>
 <li>compileSdkVersion 28以上  </li>
+<li>AndroidX 必須</li>
 </ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><a href="https://developer.android.com/jetpack/androidx/migrate?hl=ja#migrate">こちら</a>を参考にAndroidXへ移行してください。</p>
+</div>
 <h2 id="事前準備"><a class="toclink" href="#事前準備">事前準備</a><a class="headerlink" href="#事前準備" title="Permanent link">&para;</a></h2>
 <p><a href="https://developers.google.com/admob/android/quick-start?hl=ja">AdMobのスタートガイド</a>を参考に、AdMobの設定をおこなってください。<br />
 Google Mobile Ads SDKは17.2.0以上をお使いください。</p>
@@ -1469,7 +1474,7 @@ Google Mobile Ads SDKは17.2.0以上をお使いください。</p>
 <h4 id="android-studioで導入する場合"><a class="toclink" href="#android-studioで導入する場合">Android Studioで導入する場合</a><a class="headerlink" href="#android-studioで導入する場合" title="Permanent link">&para;</a></h4>
 <p>アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。</p>
 <div class="codehilite"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
-    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;http://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://adcolony.bintray.com/AdColony&#39;</span> <span class="o">}</span> <span class="c1">// adcolony</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://github.com/glossom-dev/GlossomAds-Android/raw/master&#39;</span> <span class="o">}</span> <span class="c1">// adcorsa</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://imobile-maio.github.io/maven&#39;</span> <span class="o">}</span> <span class="c1">// maio</span>
