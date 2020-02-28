@@ -5,7 +5,7 @@ pip install -r requirements.txt
 echo "====== end pip install ======"
 
 if [ "$GITHUB_ACTIONS" != "true" ]; then
-mkdocs serve --dev-addr=0.0.0.0:8000
+mkdocs serve --dev-addr=0.0.0.0:8001
 else
 mkdocs build
 echo "copy .github"

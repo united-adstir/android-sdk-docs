@@ -112,6 +112,7 @@ nav:
         - 全画面インタースティシャル:
           - AdstirInterstitial: adstir/api/interstitial/AdstirInterstitial-Class-Reference.md
           - AdstirInterstitialListener: adstir/api/interstitial/AdstirInterstitialListener-Interface-Reference.md
+      - テストスイート: adstir/testsuite/index.md
       - よくある質問: adstir/question.md
   - AdMob: 
       - はじめに: admob/index.md
