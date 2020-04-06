@@ -1107,6 +1107,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="testsuite/index.html" title="テストスイート" class="md-nav__link">
+      テストスイート
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -1134,6 +1146,13 @@
   
     <label class="md-nav__title" for="__toc">目次</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#google-admanageradmobでadstirの広告が表示されません" class="md-nav__link">
+    Google AdManager/AdMobでadstirの広告が表示されません
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#レポートに表示回数が反映されません" class="md-nav__link">
@@ -1311,6 +1330,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#google-admanageradmobでadstirの広告が表示されません" class="md-nav__link">
+    Google AdManager/AdMobでadstirの広告が表示されません
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#レポートに表示回数が反映されません" class="md-nav__link">
     レポートに表示回数が反映されません
   </a>
@@ -1335,6 +1361,28 @@
                 
                 
                 <h1 id="よくある質問"><a class="toclink" href="#よくある質問">よくある質問</a><a class="headerlink" href="#よくある質問" title="Permanent link">&para;</a></h1>
+<h2 id="google-admanageradmobでadstirの広告が表示されません"><a class="toclink" href="#google-admanageradmobでadstirの広告が表示されません">Google AdManager/AdMobでadstirの広告が表示されません</a><a class="headerlink" href="#google-admanageradmobでadstirの広告が表示されません" title="Permanent link">&para;</a></h2>
+<p>AdMobメディエーションアダプタがプロジェクトに追加されていない可能性があります。<br />
+追加されていない場合は、下記のいずれかの方法でプロジェクトに追加してください。</p>
+<ul>
+<li>
+<p>Android Studioによる組み込み(build.gradle)<br />
+<div class="codehilite"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
+</span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
+    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;x.x.x&quot;</span> 
+    <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:adstir-admob-mediation-adapter:${adstir_version}&quot;</span>
+<span class="hll"><span class="o">}</span>
+</span></pre></div></p>
+</li>
+<li>
+<p>手動組み込み<br />
+adstir SDKのzipファイルに同梱されている<code>adstir-admob-mediation-adapter.aar</code>をプロジェクトに追加してください。</p>
+</li>
+</ul>
 <h2 id="レポートに表示回数が反映されません"><a class="toclink" href="#レポートに表示回数が反映されません">レポートに表示回数が反映されません</a><a class="headerlink" href="#レポートに表示回数が反映されません" title="Permanent link">&para;</a></h2>
 <p>開発版とリリース版のパッケージ名が異なる場合、一部の提携ネットワークで実績の取得が行われないことがございます。
 その際は、リリース版と同じパッケージ名に変更いただいた上でテストいただくか、開発版とリリース版のパッケージ名が異なる旨を添えていただき、レポート数値について営業担当にお問い合わせください。</p>
