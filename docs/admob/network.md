@@ -3,16 +3,16 @@
 ## アドネットワーク一覧
 adstirのAdMobパッケージには下記のアドネットワークのSDKがパッケージングされております。
 
-アドネットワーク|SDKバージョン|バナー|インタースティシャル|動画リワード|動画リワード(新API)|ネイティブ
----| :-: |:-:|:-:|:-:|:-:|:-:
-AdColony|{{ version.adcolony }}| o | o | o | o | -
-AppLovin|{{ version.applovin }}| o | o | o | o | o
-Facebook|{{ version.facebook }}| o | o | o | o | o
-maio    |{{ version.maio     }}| - | o | o | o | -
-MoPub   |{{ version.mopub    }}| o | o | o | o | o
-nend    |{{ version.nend     }}| o | o | o | o | - 
-Tapjoy  |{{ version.tapjoy   }}| - | o | o | o | - 
-UnityAds|{{ version.unityads }}| o | o | o | o | - 
+アドネットワーク|SDKバージョン|バナー|インタースティシャル|動画リワード|動画リワード(新API)|ネイティブ|アダプティブバナー
+---| :-: |:-:|:-:|:-:|:-:|:-:|:-:
+AdColony|{{ version.adcolony }}| o | o | o | o | - | -
+AppLovin|{{ version.applovin }}| o | o | o | o | o | -
+Facebook|{{ version.facebook }}| o | o | o | o | o | -
+maio    |{{ version.maio     }}| - | o | o | o | - | -
+MoPub   |{{ version.mopub    }}| o | o | o | o | o | -
+nend    |{{ version.nend     }}| o | o | o | o | - | -
+Tapjoy  |{{ version.tapjoy   }}| - | o | o | o | - | -
+UnityAds|{{ version.unityads }}| o | o | o | o | - | -
 
 ## 追加実装
 

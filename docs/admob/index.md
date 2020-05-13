@@ -65,6 +65,10 @@ AdMobの実装ガイドをご覧ください
 * [インタースティシャル](https://developers.google.com/admob/android/interstitial?hl=ja)
 * [ネイティブ](https://developers.google.com/admob/android/native/start?hl=ja)
 * [動画リワード](https://developers.google.com/admob/android/rewarded-ads?hl=ja)
+* [アダプティブバナー](https://developers.google.com/admob/android/banner/adaptive?hl=ja)
+
+    !!! warning
+        アダプティブバナーを実装する場合は、最新バージョンのGoogle Mobile Ads SDK をご利用ください。
 
 また、アドネットワークによっては追加で実装する必要がございます。 [追加実装](network#追加実装)をご覧になり、実装をお願いします。
 
