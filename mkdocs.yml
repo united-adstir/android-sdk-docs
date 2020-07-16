@@ -22,13 +22,13 @@ extra:
     adcorsa: 2.0.0
     applovin: 9.10.5
     facebook: 5.6.0
-    imobile: 2.0.20
+    imobile: 2.0.22
     maio: 1.1.10
     mobvista: 12.1.51
     mopub: 5.10.0
     nend: 5.3.0
     tapjoy: 12.4.2
-    unityads: 3.3.0
+    unityads: 3.4.6
     zucks: 4.6.1
   sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.15.2-SampleApp.zip'
 
