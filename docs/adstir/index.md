@@ -8,9 +8,9 @@ adstirのインテグレーションガイドです。Android Studioに対応し
 
 ## 前提条件
 
-* Android 4.1以上
+* Android 4.4以上
 * Android Studio 3.2以上
-* minSdkVersion 14以上
+* minSdkVersion 19以上
 * compileSdkVersion 28以上
 * AndroidX 必須
 
