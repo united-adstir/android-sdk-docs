@@ -2,7 +2,7 @@
 
 ## 対応OS
 
-Android4.1以上(Andoid4.4以上推奨)
+Android4.4以上
 
 ## 広告の設定
 

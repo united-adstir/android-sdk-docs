@@ -48,17 +48,15 @@ MoPubのSDKは、もしくはSwipeInterstitialSDKBundledのパッケージに同
 1. File -> New -> New Module -> Import .JAR/.AAR Package より以下のファイルを追加します。
     * `mopub-sdk-banner-x.x.x.aar`
     * `mopub-sdk-base-x.x.x.aar`
-    * `mopub-sdk-interstitial-x.x.x.aar`
+    * `mopub-sdk-fullscreen-x.x.x.aar`
     * `mopub-sdk-native-static-x.x.x.aar`
-    * `mopub-sdk-rewardedvideo-x.x.x.aar`
     * `androidwebviewmediation-adapter-mopub.aar`
 
 1. File -> Project Structure -> app -> Dependencies より以下を追加します。
     * `mopub-sdk-banner-x.x.x`
     * `mopub-sdk-base-x.x.x`
-    * `mopub-sdk-interstitial-x.x.x`
+    * `mopub-sdk-fullscreen-x.x.x`
     * `mopub-sdk-native-static-x.x.x`
-    * `mopub-sdk-rewardedvideo-x.x.x`
     * `androidwebviewmediation-adapter-mopub`
 
 3. アプリケーションレベルのbuild.gradleに依存関係を設定します。
