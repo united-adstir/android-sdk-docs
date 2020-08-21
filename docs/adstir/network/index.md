@@ -16,5 +16,6 @@
 [MoPub](mopub.md)      |{{version.mopub}}   |4.4〜| ○ | ○ | ○ | ○ | ○
 [Nend](nend.md)        |{{version.nend}}    |4.4〜| - | - | - | ○ | ○
 [TapJoy](tapjoy.md)    |{{version.tapjoy}}  |4.4〜| - | - | - | ○ | ○
+[TikTok](tiktok.md)    |{{version.tiktok}}  |4.4〜| - | - | - | ○ | ○
 [UnityAds](unityads.md)|{{version.unityads}}|4.4〜| - | - | - | ○ | -
 [Zucks](zucks.md)      |{{version.zucks}}   |4.4〜| - | ○ | - | - | -

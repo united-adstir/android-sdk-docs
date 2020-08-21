@@ -28,6 +28,7 @@ extra:
     mopub: 5.13.1
     nend: 5.3.0
     tapjoy: 12.6.1
+    tiktok: 3.1.5.1
     unityads: 3.4.6
     zucks: 4.6.1
   sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.15.2-SampleApp.zip'
@@ -71,6 +72,7 @@ nav:
         - MoPub: adstir/network/mopub.md
         - nend: adstir/network/nend.md
         - TapJoy: adstir/network/tapjoy.md
+        - TikTok: adstir/network/tiktok.md
         - UnityAds: adstir/network/unityads.md
         - Zucks: adstir/network/zucks.md
 
