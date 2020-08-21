@@ -31,5 +31,5 @@ ZucksのSDKは、SwipeInterstitialSDKBundledのパッケージに同梱されて
 #### SDKの組み込み
 初期設定の[SDKの手動組み込み](../init/manual_integration.md)の完了後、下記の手順で追加してください。
 
-1. File -> New -> New Module -> Import .JAR/.AAR Package より`ZucksAdNetworkSDK-x.x.x.jar`, `androidwebviewmediation-adapter-zucks.aar`を追加します。
-2. File -> Project Structure -> Dependencies -> app より`ZucksAdNetworkSDK-x.x.x`, `androidwebviewmediation-adapter-zucks`を追加します。
+1. File -> New -> New Module -> Import .JAR/.AAR Package より`ZucksAdNetworkSDK-x.x.x.jar`, `adstir-mediationadapter-adapter-zucks.aar`を追加します。
+2. File -> Project Structure -> Dependencies -> app より`ZucksAdNetworkSDK-x.x.x`, `adstir-mediationadapter-adapter-zucks`を追加します。

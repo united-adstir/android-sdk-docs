@@ -36,8 +36,8 @@ nendのSDKは、VideoAdSDKBundledのパッケージに同梱されておりま�
 #### SDKの組み込み
 初期設定の[SDKの手動組み込み](../init/manual_integration.md)の完了後、下記の手順で追加してください。
 
-1. File -> New -> New Module -> Import .JAR/.AAR Package より`nendSDK-x.x.x.aar`, `androidwebviewmediation-adapter-nend.aar`を追加します。
-2. File -> Project Structure -> Dependencies -> app より`nendSDK-x.x.x`, `androidwebviewmediation-adapter-nend`を追加します。
+1. File -> New -> New Module -> Import .JAR/.AAR Package より`nendSDK-x.x.x.aar`, `adstir-mediationadapter-adapter-nend.aar`を追加します。
+2. File -> Project Structure -> Dependencies -> app より`nendSDK-x.x.x`, `adstir-mediationadapter-adapter-nend`を追加します。
 3. アプリケーションレベルのbuild.gradleに依存関係を設定します。
 
 ```groovy hl_lines="1 4"

@@ -33,5 +33,5 @@ TikTokのSDKは、VideoAdSDKBundledのパッケージに同梱されておりま
 
 初期設定の[SDKの手動組み込み](../init/manual_integration.md)の完了後、下記の手順で追加してください。
 
-1. File -> New -> New Module -> Import .JAR/.AAR Package より`open_ad_sdk.aar`, `androidwebviewmediation-adapter-tiktok.aar`を追加します。
-2. File -> Project Structure -> Dependencies -> app より`open_ad_sdk`, `androidwebviewmediation-adapter-tiktok`を追加します。
+1. File -> New -> New Module -> Import .JAR/.AAR Package より`open_ad_sdk.aar`, `adstir-mediationadapter-adapter-tiktok.aar`を追加します。
+2. File -> Project Structure -> Dependencies -> app より`open_ad_sdk`, `adstir-mediationadapter-adapter-tiktok`を追加します。

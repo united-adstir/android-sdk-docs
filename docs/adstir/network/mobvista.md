@@ -37,7 +37,7 @@ MobvistaのSDKは、VideoAdSDKBundledのパッケージに同梱されており�
     * `mintegral_reward.aar`
     * `mintegral_videocommon.aar`
     * `mintegral_videojs.aar`
-    * `androidwebviewmediation-adapter-mobvista.aar`
+    * `adstir-mediationadapter-adapter-mobvista.aar`
 1. File -> Project Structure -> app -> Dependencies より以下を追加します。
     * `mintegral_common`
     * `mintegral_mtgjscommon.aar`
@@ -45,4 +45,4 @@ MobvistaのSDKは、VideoAdSDKBundledのパッケージに同梱されており�
     * `mintegral_reward`
     * `mintegral_videocommon`
     * `mintegral_videojs`
-    * `androidwebviewmediation-adapter-mobvista`
+    * `adstir-mediationadapter-adapter-mobvista`

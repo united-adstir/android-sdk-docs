@@ -31,5 +31,5 @@ imobileのSDKは、VideoAdSDKBundledのパッケージに同梱されており�
 #### SDKの組み込み
 初期設定の[SDKの手動組み込み](../init/manual_integration.md)の完了後、下記の手順で追加してください。
 
-1. File -> New -> New Module -> Import .JAR/.AAR Package より`imobileSdkAds.jar`, `androidwebviewmediation-adapter-imobile.aar`を追加します。
-2. File -> Project Structure -> Dependencies -> app より`imobileSdkAds`, `androidwebviewmediation-adapter-imobile`を追加します。
+1. File -> New -> New Module -> Import .JAR/.AAR Package より`imobileSdkAds.jar`, `adstir-mediationadapter-adapter-imobile.aar`を追加します。
+2. File -> Project Structure -> Dependencies -> app より`imobileSdkAds`, `adstir-mediationadapter-adapter-imobile`を追加します。

@@ -30,5 +30,5 @@ maioのSDKは、VideoAdSDKBundledのパッケージに同梱されておりま�
 #### SDKの組み込み
 初期設定の[SDKの手動組み込み](../init/manual_integration.md)の完了後、下記の手順で追加してください。
 
-1. File -> New -> New Module -> Import .JAR/.AAR Package より`unity-ads.aar`, `androidwebviewmediation-adapter-unityads.aar`を追加します。
-2. File -> Project Structure -> Dependencies -> app より`unity-ads`, `androidwebviewmediation-adapter-unityads`を追加します。
+1. File -> New -> New Module -> Import .JAR/.AAR Package より`unity-ads.aar`, `adstir-mediationadapter-adapter-unityads.aar`を追加します。
+2. File -> Project Structure -> Dependencies -> app より`unity-ads`, `adstir-mediationadapter-adapter-unityads`を追加します。
