@@ -1459,14 +1459,23 @@
 <p>Android 4.4以上</p>
 <h2 id="sdkの組み込み"><a class="toclink" href="#sdkの組み込み">SDKの組み込み</a><a class="headerlink" href="#sdkの組み込み" title="Permanent link">&para;</a></h2>
 <h3 id="android-studioによる組み込み推奨"><a class="toclink" href="#android-studioによる組み込み推奨">Android Studioによる組み込み(推奨)</a><a class="headerlink" href="#android-studioによる組み込み推奨" title="Permanent link">&para;</a></h3>
+<p>プロジェクトレベルのbuild.gradleにmavenリポジトリを設定します。</p>
+<div class="codehilite"><pre><span></span><span class="hll"><span class="n">allprojects</span> <span class="o">{</span>
+</span><span class="hll">    <span class="n">repositories</span> <span class="o">{</span>
+</span>        <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android&#39;</span> <span class="o">}</span> <span class="c1">// mintegral</span>
+<span class="hll">    <span class="o">}</span>
+</span><span class="hll"><span class="o">}</span>
+</span></pre></div>
+
 <p>アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。</p>
 <div class="codehilite"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android&#39;</span> <span class="o">}</span> <span class="c1">// mobvista</span>
 <span class="o">}</span>
-
-<span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
-</span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;x.x.x&quot;</span> 
+<span class="hll">
+</span><span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
+</span><span class="hll">    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
+</span>    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;x.x.x&quot;</span> 
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:adstir-mediationadapter-mobvista:${adstir_version}&quot;</span>
 <span class="hll"><span class="o">}</span>
