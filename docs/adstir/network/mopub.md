@@ -39,8 +39,8 @@ dependencies {
 
 ### 手動組み込み
 #### SDKの準備
-MoPubのSDKは、もしくはSwipeInterstitialSDKBundledのパッケージに同梱されております。
-作成された動画枠の動画SDK (iOS)もしくはスワイプインタースティシャル広告枠のスワイプインタースティシャルSDK (iOS)より取得いただけます。
+MoPubのSDKは、VideoAdSDKBundledのパッケージもしくはSwipeInterstitialSDKBundledのパッケージに同梱されております。
+作成された動画枠の動画SDK (Android)もしくはスワイプインタースティシャル広告枠のスワイプインタースティシャルSDK (Android)より取得いただけます。
 
 #### SDKの組み込み
 初期設定の[SDKの手動組み込み](../init/manual_integration.md)の完了後、下記の手順で追加してください。

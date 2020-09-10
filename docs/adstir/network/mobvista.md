@@ -7,11 +7,22 @@ Android 4.4以上
 ## SDKの組み込み
 
 ### Android Studioによる組み込み(推奨)
+プロジェクトレベルのbuild.gradleにmavenリポジトリを設定します。
+
+```groovy hl_lines="1 2 4 5"
+allprojects {
+    repositories {
+        maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mintegral
+    }
+}
+```
+
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。
 
-```groovy hl_lines="5 10"
+```groovy hl_lines="5 6 7 11"
 repositories {
     maven { url 'https://cdnp.ad-stir.com/m2' }
+    maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mobvista
 }
 
 dependencies {

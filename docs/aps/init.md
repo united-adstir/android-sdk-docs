@@ -10,9 +10,20 @@ APSの広告は下記のものに対応しております。
 APSのSDKとアダプター、アドネットワークのSDKとアダプターをプロジェクトへ導入します。
 
 ### Android Studioで導入する場合
-アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="11 15"
+プロジェクトレベルのbuild.gradleにmavenリポジトリを設定します。
+
+```groovy hl_lines="1 2 4 5"
+allprojects {
+    repositories {
+        maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mintegral
+    }
+}
+```
+
+次にアプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
+
+```groovy hl_lines="12 16"
 repositories {
     maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url 'https://adcolony.bintray.com/AdColony' } // adcolony
@@ -21,6 +32,7 @@ repositories {
     maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
     maven { url 'https://s3.amazonaws.com/moat-sdk-builds' } // mopub
     maven { url 'https://imobile.github.io/adnw-sdk-android' } // imobile
+    maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mintegral
 }
 
 dependencies {

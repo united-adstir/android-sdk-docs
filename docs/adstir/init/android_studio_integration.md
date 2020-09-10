@@ -23,7 +23,19 @@ dependencies {
 下記の設定で、動画リワード・全画面インタースティシャル広告に対応したメディエーションアダプタが一括で導入されます。
 ネットワークについては[こちら](../network/index.md)をご覧ください。
 
-```groovy hl_lines="11 15"
+プロジェクトレベルのbuild.gradleにmavenリポジトリを設定します。
+
+```groovy hl_lines="1 2 4 5"
+allprojects {
+    repositories {
+        maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mintegral
+    }
+}
+```
+
+アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。
+
+```groovy hl_lines="12 16"
 repositories {
     maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url 'https://adcolony.bintray.com/AdColony' } // adcolony
@@ -32,6 +44,7 @@ repositories {
     maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
     maven { url 'https://s3.amazonaws.com/moat-sdk-builds' } // mopub
     maven { url 'https://imobile.github.io/adnw-sdk-android' } // imobile
+    maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mobvista
 }
 
 dependencies {

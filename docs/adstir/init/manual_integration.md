@@ -4,7 +4,7 @@
 1. 管理画面にログインして、対象の枠の「タグ/SDK」を選択してください。
 ![](Adstir_sdk_tutorial_01.png)
 
-2. 「SDKダウンロード」より「AdStir SDK(iOS)」をダウンロードしてください。
+2. 「SDKダウンロード」より「AdStir SDK(Android)」をダウンロードしてください。
 
 3. 「SDKパラメータ」より「メディアID」および「枠No」を取得してください。
 ![](Adstir_sdk_tutorial_02.png)
