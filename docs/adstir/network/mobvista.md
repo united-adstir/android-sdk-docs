@@ -12,7 +12,7 @@ Android 4.4以上
 ```groovy hl_lines="1 2 4 5"
 allprojects {
     repositories {
-        maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mintegral
+        maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mobvista
     }
 }
 ```

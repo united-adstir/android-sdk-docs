@@ -16,7 +16,7 @@ APSのSDKとアダプター、アドネットワークのSDKとアダプター�
 ```groovy hl_lines="1 2 4 5"
 allprojects {
     repositories {
-        maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mintegral
+        maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mobvista
     }
 }
 ```
@@ -32,7 +32,7 @@ repositories {
     maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
     maven { url 'https://s3.amazonaws.com/moat-sdk-builds' } // mopub
     maven { url 'https://imobile.github.io/adnw-sdk-android' } // imobile
-    maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mintegral
+    maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mobvista
 }
 
 dependencies {
