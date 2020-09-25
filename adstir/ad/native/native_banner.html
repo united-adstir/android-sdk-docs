@@ -1440,10 +1440,12 @@
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
 <span class="kd">var</span> <span class="nx">adstir_vars</span> <span class="o">=</span> <span class="p">{</span>
   <span class="nx">ver</span><span class="o">:</span> <span class="s2">&quot;4.0&quot;</span><span class="p">,</span>
+  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&quot;webview&quot;</span><span class="p">,</span>
   <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;native&quot;</span><span class="p">,</span>
   <span class="nx">app_id</span><span class="o">:</span> <span class="s2">&quot;MEDIA-XXXXX&quot;</span><span class="p">,</span>
   <span class="nx">ad_spot</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
   <span class="nx">async</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">origin</span><span class="o">:</span> <span class="s2">&quot;com.foo.bar.baz&quot;</span><span class="p">,</span>
 <span class="p">};</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://js.ad-stir.com/js/adstir_native.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
@@ -1465,10 +1467,12 @@
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
 <span class="kd">var</span> <span class="nx">adstir_vars</span> <span class="o">=</span> <span class="p">{</span>
   <span class="nx">ver</span><span class="o">:</span> <span class="s2">&quot;4.0&quot;</span><span class="p">,</span>
+  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&quot;webview&quot;</span><span class="p">,</span>
   <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;native&quot;</span><span class="p">,</span>
   <span class="nx">app_id</span><span class="o">:</span> <span class="s2">&quot;MEDIA-XXXXX&quot;</span><span class="p">,</span>
   <span class="nx">ad_spot</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
   <span class="nx">async</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">origin</span><span class="o">:</span> <span class="s2">&quot;com.foo.bar.baz&quot;</span><span class="p">,</span>
 <span class="p">};</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://js.ad-stir.com/js/adstir_native.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
@@ -1476,9 +1480,52 @@
 
 <h2 id="android広告idの使用"><a class="toclink" href="#android広告idの使用">Android広告IDの使用</a><a class="headerlink" href="#android広告idの使用" title="Permanent link">&para;</a></h2>
 <p>アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。</p>
-<ul>
-<li><a href="https://github.com/united-adstir/AdStir-Integration-Guide-Android/wiki/Android%E5%BA%83%E5%91%8AID%E3%81%AE%E9%80%81%E4%BF%A1">Android広告IDの使用</a></li>
-</ul>
+<p>広告識別子の取得方法は、下記取得サンプルと、<a href="https://developers.google.com/android/reference/com/google/android/gms/ads/identifier/package-summary#classes">公式ドキュメント</a>(英語)をご覧下さい。  </p>
+<div class="codehilite"><pre><span></span><span class="k">new</span> <span class="n">AsyncTask</span><span class="o">&lt;</span><span class="n">Void</span><span class="p">,</span> <span class="n">Void</span><span class="p">,</span> <span class="n">String</span><span class="o">&gt;</span><span class="p">(){</span>
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="nf">doInBackground</span><span class="p">(</span><span class="n">Void</span><span class="p">...</span> <span class="n">params</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="n">AdvertisingIdClient</span><span class="p">.</span><span class="na">Info</span> <span class="n">info</span> <span class="o">=</span> <span class="n">AdvertisingIdClient</span><span class="p">.</span><span class="na">getAdvertisingIdInfo</span><span class="p">(</span><span class="n">context</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">info</span><span class="p">.</span><span class="na">isLimitAdTrackingEnabled</span><span class="p">())</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">info</span><span class="p">.</span><span class="na">getId</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">GooglePlayServicesNotAvailableException</span> <span class="o">|</span> 
+                 <span class="n">GooglePlayServicesRepairableException</span> <span class="o">|</span>
+                 <span class="n">IOException</span> <span class="o">|</span> 
+                 <span class="n">IllegalStateException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onPostExecute</span><span class="p">(</span><span class="n">String</span> <span class="n">advertisingId</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 取得後の処理</span>
+    <span class="p">}</span>
+<span class="p">}.</span><span class="na">execute</span><span class="p">();</span>
+</pre></div>
+
+<p>HTMLを生成する際に``の部分を、取得した広告識別子で置換してください。なお、広告識別子は、<a href="https://play.google.com/about/monetization.html#ads-policy">Android広告IDの使用</a>に記載の通り、オプトアウトされている場合の利用が制限されております。下記コードのコメントに記載の通り、適切な対応をお願い致します。  </p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
+<span class="nt">html</span><span class="o">,</span><span class="nt">body</span> <span class="p">{</span> <span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="p">}</span> <span class="c">/* marginとpaddingを0に */</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="kd">var</span> <span class="nx">adstir_vars</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">ver</span><span class="o">:</span> <span class="s2">&quot;4.0&quot;</span><span class="p">,</span>
+  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&quot;webview&quot;</span><span class="p">,</span>
+  <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;native&quot;</span><span class="p">,</span>
+  <span class="nx">app_id</span><span class="o">:</span> <span class="s2">&quot;MEDIA-XXXXX&quot;</span><span class="p">,</span>
+  <span class="nx">ad_spot</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nx">origin</span><span class="o">:</span> <span class="s2">&quot;com.foo.bar.baz&quot;</span><span class="p">,</span>
+  <span class="c1">// 以下の三行を適切に設定してください</span>
+  <span class="nx">lmt</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// ユーザーがオプトアウトしている場合は、trueを設定してください</span>
+  <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;google&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子の種類(Google - GAID)</span>
+  <span class="nx">uid</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子</span>
+<span class="p">};</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://js.ad-stir.com/js/adstir_native.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
 <h2 id="よくある質問"><a class="toclink" href="#よくある質問">よくある質問</a><a class="headerlink" href="#よくある質問" title="Permanent link">&para;</a></h2>
 <h3 id="useragentの変更について"><a class="toclink" href="#useragentの変更について">User−Agentの変更について</a><a class="headerlink" href="#useragentの変更について" title="Permanent link">&para;</a></h3>
 <p>User-Agentを標準のものから変更された場合、正常に広告は配信されません。</p>
