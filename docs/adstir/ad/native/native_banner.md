@@ -13,10 +13,12 @@ html,body { margin:0; padding:0 } /* marginとpaddingを0に */
 <script type="text/javascript">
 var adstir_vars = {
   ver: "4.0",
+  platform: "webview",
   type: "native",
   app_id: "MEDIA-XXXXX",
   ad_spot: 1,
   async: false,
+  origin: "com.foo.bar.baz",
 };
 </script>
 <script type="text/javascript" src="https://js.ad-stir.com/js/adstir_native.js"></script>
@@ -41,10 +43,12 @@ html,body { margin:0; padding:0 } /* marginとpaddingを0に */
 <script type="text/javascript">
 var adstir_vars = {
   ver: "4.0",
+  platform: "webview",
   type: "native",
   app_id: "MEDIA-XXXXX",
   ad_spot: 1,
   async: false,
+  origin: "com.foo.bar.baz",
 };
 </script>
 <script type="text/javascript" src="https://js.ad-stir.com/js/adstir_native.js"></script>
@@ -54,7 +58,55 @@ var adstir_vars = {
 
 アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。
 
-* [Android広告IDの使用](https://github.com/united-adstir/AdStir-Integration-Guide-Android/wiki/Android%E5%BA%83%E5%91%8AID%E3%81%AE%E9%80%81%E4%BF%A1)
+広告識別子の取得方法は、下記取得サンプルと、[公式ドキュメント](https://developers.google.com/android/reference/com/google/android/gms/ads/identifier/package-summary#classes)(英語)をご覧下さい。  
+
+```java
+new AsyncTask<Void, Void, String>(){
+    @Override
+    protected String doInBackground(Void... params) {
+        try {
+            AdvertisingIdClient.Info info = AdvertisingIdClient.getAdvertisingIdInfo(context);
+            if (info.isLimitAdTrackingEnabled()) {
+                return null;
+            } else {
+                return info.getId();
+            }
+        } catch (GooglePlayServicesNotAvailableException | 
+                 GooglePlayServicesRepairableException |
+                 IOException | 
+                 IllegalStateException e) {
+            return null;
+        }
+    }
+    @Override
+    protected void onPostExecute(String advertisingId) {
+        // 取得後の処理
+    }
+}.execute();
+```
+
+HTMLを生成する際に`{{ここに広告識別子を書き出す}}`の部分を、取得した広告識別子で置換してください。なお、広告識別子は、[Android広告IDの使用](https://play.google.com/about/monetization.html#ads-policy)に記載の通り、オプトアウトされている場合の利用が制限されております。下記コードのコメントに記載の通り、適切な対応をお願い致します。  
+
+```HTML
+<style type="text/css">
+html,body { margin:0; padding:0 } /* marginとpaddingを0に */
+</style>
+<script type="text/javascript">
+var adstir_vars = {
+  ver: "4.0",
+  platform: "webview",
+  type: "native",
+  app_id: "MEDIA-XXXXX",
+  ad_spot: 1,
+  origin: "com.foo.bar.baz",
+  // 以下の三行を適切に設定してください
+  lmt: false, // ユーザーがオプトアウトしている場合は、trueを設定してください
+  id: "google", // 広告識別子の種類(Google - GAID)
+  uid: "{{ここに広告識別子を書き出す}}", // 広告識別子
+};
+</script>
+<script type="text/javascript" src="https://js.ad-stir.com/js/adstir_native.js"></script>
+```
 
 ## よくある質問
 
