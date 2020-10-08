@@ -78,7 +78,9 @@ nav:
         - Zucks: adstir/network/zucks.md
 
       - 広告の実装:
-        - バナー: adstir/ad/banner.md
+        - バナー:
+          - バナー: adstir/ad/banner.md
+          - WebViewアプリでの配信: adstir/ad/banner/webview.md
         - スワイプインタースティシャル: adstir/ad/swipe.md
         - ネイティブ: 
           - ネイティブライクバナー: adstir/ad/native/native_banner.md
