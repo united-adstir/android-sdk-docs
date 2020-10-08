@@ -41,7 +41,7 @@ var adstir_vars = {
 <script type="text/javascript" src="https://js.ad-stir.com/js/adstir.js"></script>
 ```
 
-## Android広告IDの使用
+## Android広告IDの追加
 
 アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。
 
