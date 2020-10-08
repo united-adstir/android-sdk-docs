@@ -24,7 +24,7 @@ repositories {
 
 dependencies {
     // 利用するadstirのSDKバージョンを設定します
-    def adstir_version = "x.x.x" 
+    def adstir_version = "{{version.adstir}}"
     implementation "com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}"
     implementation "com.ad-stir.mediationadapter:adstir-mediationadapter-mopub:${adstir_version}"
     // ご利用されているライブラリが競合した際は下記のバージョンをご利用されているライブラリのバージョンへ書き換えてください。
@@ -69,5 +69,6 @@ dependencies {
     implementation "androidx.annotation:annotation:1.1.0"
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation "androidx.appcompat:appcompat:1.1.0"
+    implementation "com.mopub:omsdk-android:1.3.4"
 }
 ```

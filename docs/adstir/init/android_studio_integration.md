@@ -10,7 +10,7 @@ repositories {
 
 dependencies {
     // 利用するadstirのSDKバージョンを設定します
-    def adstir_version = "x.x.x" 
+    def adstir_version = "{{version.adstir}}"
     implementation "com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}"
 }
 ```
@@ -49,7 +49,7 @@ repositories {
 
 dependencies {
     // 利用するadstirのSDKバージョンを設定します
-    def adstir_version = "x.x.x" 
+    def adstir_version = "{{version.adstir}}"
     implementation "com.ad-stir.mediationadapter:adstir-mediationadapter:${adstir_version}"
 }
 ```

@@ -47,7 +47,7 @@ repositories {
 
 dependencies {
     // 利用するadstirのSDKバージョンを設定します
-    def adstir_version = "x.x.x" 
+    def adstir_version = "{{version.adstir}}" 
     implementation "com.ad-stir.mediationadapter:admob-package:${adstir_version}"
 }
 ```

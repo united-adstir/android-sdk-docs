@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
     // 利用するadstirのSDKバージョンを設定します
-    def adstir_version = "x.x.x" 
+    def adstir_version = "{{version.adstir}}"
     implementation "com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}"
     implementation "com.ad-stir.mediationadapter:adstir-mediationadapter-nend:${adstir_version}"
     // ご利用されているライブラリが競合した際は下記のバージョンをご利用されているライブラリのバージョンへ書き換えてください。
