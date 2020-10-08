@@ -3,7 +3,8 @@
 ## v2.15.11 (2020/10/08)
 
 - bundle SDKの更新
-    * MoPub 5.14.0
+    * [MoPub 5.14.0](https://github.com/mopub/mopub-android-sdk/releases/tag/v5.14.0)
+        * Android 11 (API level 30)対応版SDKです
 
 ## v2.15.10 (2020/09/04)
 
