@@ -442,18 +442,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../adstir/network/mobvista.html" title="Mobvista" class="md-nav__link">
-      Mobvista
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../adstir/network/mopub.html" title="MoPub" class="md-nav__link">
       MoPub
     </a>
@@ -1471,15 +1459,7 @@
 <h2 id="プロジェクトへapsの導入"><a class="toclink" href="#プロジェクトへapsの導入">プロジェクトへAPSの導入</a><a class="headerlink" href="#プロジェクトへapsの導入" title="Permanent link">&para;</a></h2>
 <p>APSのSDKとアダプター、アドネットワークのSDKとアダプターをプロジェクトへ導入します。</p>
 <h3 id="android-studioで導入する場合"><a class="toclink" href="#android-studioで導入する場合">Android Studioで導入する場合</a><a class="headerlink" href="#android-studioで導入する場合" title="Permanent link">&para;</a></h3>
-<p>プロジェクトレベルのbuild.gradleにmavenリポジトリを設定します。</p>
-<div class="codehilite"><pre><span></span><span class="hll"><span class="n">allprojects</span> <span class="o">{</span>
-</span><span class="hll">    <span class="n">repositories</span> <span class="o">{</span>
-</span>        <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android&#39;</span> <span class="o">}</span> <span class="c1">// mobvista</span>
-<span class="hll">    <span class="o">}</span>
-</span><span class="hll"><span class="o">}</span>
-</span></pre></div>
-
-<p>次にアプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。</p>
+<p>アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。</p>
 <div class="codehilite"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://adcolony.bintray.com/AdColony&#39;</span> <span class="o">}</span> <span class="c1">// adcolony</span>
@@ -1488,15 +1468,14 @@
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;http://fan-adn.github.io/nendSDK-Android-lib/library&#39;</span> <span class="o">}</span> <span class="c1">// nend</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://s3.amazonaws.com/moat-sdk-builds&#39;</span> <span class="o">}</span> <span class="c1">// mopub</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://imobile.github.io/adnw-sdk-android&#39;</span> <span class="o">}</span> <span class="c1">// imobile</span>
-    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android&#39;</span> <span class="o">}</span> <span class="c1">// mobvista</span>
 <span class="o">}</span>
 
-<span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
-</span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.11&quot;</span>
+<span class="n">dependencies</span> <span class="o">{</span>
+<span class="hll">    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
+</span>    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.12&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:admob-package:${adstir_version}&quot;</span>
-<span class="hll"><span class="o">}</span>
-</span></pre></div>
+<span class="o">}</span>
+</pre></div>
 
 <h3 id="手動で導入する場合"><a class="toclink" href="#手動で導入する場合">手動で導入する場合</a><a class="headerlink" href="#手動で導入する場合" title="Permanent link">&para;</a></h3>
 <p>営業担当にお問い合わせください。</p>
