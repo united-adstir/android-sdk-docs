@@ -21,17 +21,7 @@ Google Mobile Ads SDKは17.2.0以上をお使いください。
 
 #### Android Studioで導入する場合
 
-プロジェクトレベルのbuild.gradleにmavenリポジトリを設定します。
-
-```groovy hl_lines="1 2 4 5"
-allprojects {
-    repositories {
-        maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mobvista
-    }
-}
-```
-
-次にアプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
+アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
 ```groovy hl_lines="12 16"
 repositories {
@@ -42,7 +32,6 @@ repositories {
     maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
     maven { url 'https://s3.amazonaws.com/moat-sdk-builds' } // mopub
     maven { url 'https://imobile.github.io/adnw-sdk-android' } // imobile
-    maven { url 'https://dl.bintray.com/mintegral-official/Mintegral_ad_SDK_Android' } // mobvista
 }
 
 dependencies {

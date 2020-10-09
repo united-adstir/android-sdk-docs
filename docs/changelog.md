@@ -1,5 +1,10 @@
 # 変更履歴
 
+## v2.15.12 (2020/10/09)
+
+- Mobvista(Mintegral) SDKのBundleを終了
+
+
 ## v2.15.11 (2020/10/08)
 
 - bundle SDKの更新
