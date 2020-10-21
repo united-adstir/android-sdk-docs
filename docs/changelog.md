@@ -1,5 +1,19 @@
 # 変更履歴
 
+## v2.15.13 (2020/10/21)
+
+- adstir SDKのcompileSdkVersion/targetSdkVersionを30に変更
+- bundle SDKの更新
+    * [Nend 7.0.0](https://github.com/fan-ADN/nendSDK-Android-pub/releases/tag/7.0.0)
+        * Android 11 (API level 30)対応版SDKです
+        * 7.0.0未満のnendSDKをtargetSdkVersion 30でビルドした場合、動画広告やインタラクティブ広告が正常に動作しません
+    * [maio 1.1.13](https://github.com/imobile-maio/maio-Android-SDK/releases/tag/v1.1.13)
+        * Android 11 (API level 30)対応版SDKです
+        * AdMobパッケージにはmaioのAdMob用アダプターは含まれておりません
+    * [UnityAds 3.4.8](https://github.com/Unity-Technologies/unity-ads-android/releases/tag/3.4.8)
+        * Android 11 (API level 30)対応版SDKです
+        * Android 11 (API level 30)でのクラッシュが修正されました
+
 ## v2.15.12 (2020/10/09)
 
 - Mobvista(Mintegral) SDKのBundleを終了
