@@ -1,5 +1,11 @@
 # 変更履歴
 
+## v2.15.14 (2020/11/25)
+
+- bundle SDKの更新
+    * [MoPub 5.15.0](https://github.com/mopub/mopub-android-sdk/releases/tag/v5.15.0)
+    * AdMobパッケージにmaioのAdMob用アダプターを追加
+
 ## v2.15.13 (2020/10/21)
 
 - adstir SDKのcompileSdkVersion/targetSdkVersionを30に変更

@@ -18,14 +18,14 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.15.13
+    adstir: 2.15.14
     adcolony: 4.1.4
     adcorsa: 2.0.0
     applovin: 9.13.1
     facebook: 6.1.0
     imobile: 2.0.22
     maio: 1.1.13
-    mopub: 5.14.0
+    mopub: 5.15.0
     nend: 7.0.0
     tapjoy: 12.6.1
     tiktok: 3.1.5.1
