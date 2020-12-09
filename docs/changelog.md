@@ -1,5 +1,11 @@
 # 変更履歴
 
+## v2.15.15 (2020/12/09)
+
+- Nendアダプターの修正
+    - 依存関係に`androidx.preference:preference`が追加
+- AdMobパッケージにNendのAdMob用アダプターを追加
+
 ## v2.15.14 (2020/11/26)
 
 - bundle SDKの更新

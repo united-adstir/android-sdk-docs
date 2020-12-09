@@ -43,6 +43,7 @@ nendのSDKは、VideoAdSDKBundledのパッケージに同梱されておりま�
 ```groovy hl_lines="1 4"
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0' // androidx.appcompatが定義済みの場合は不要
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.preference:preference:1.1.1'
 }
 ```
