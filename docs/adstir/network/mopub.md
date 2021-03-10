@@ -9,7 +9,7 @@ Android 4.4以上
 ### Android Studioによる組み込み(推奨)
 アプリケーションレベルのbuild.gradleにコンパイルオプションとmavenリポジトリと依存関係を設定します。
 
-```groovy hl_lines="1 6 13 25"
+```groovy hl_lines="1 6 12 24"
 android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -19,7 +19,6 @@ android {
 
 repositories {
     maven { url 'https://cdnp.ad-stir.com/m2' }
-    maven { url 'https://s3.amazonaws.com/moat-sdk-builds' }
 }
 
 dependencies {

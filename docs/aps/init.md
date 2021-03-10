@@ -13,14 +13,12 @@ APSのSDKとアダプター、アドネットワークのSDKとアダプター�
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="12 16"
+```groovy hl_lines="9 13"
 repositories {
     maven { url 'https://cdnp.ad-stir.com/m2' }
-    maven { url 'https://adcolony.bintray.com/AdColony' } // adcolony
     maven { url 'https://github.com/glossom-dev/GlossomAds-Android/raw/master' } // adcorsa
     maven { url 'https://imobile-maio.github.io/maven' } // maio
     maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
-    maven { url 'https://s3.amazonaws.com/moat-sdk-builds' } // mopub
     maven { url 'https://imobile.github.io/adnw-sdk-android' } // imobile
 }
 

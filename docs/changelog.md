@@ -1,5 +1,12 @@
 # 変更履歴
 
+## v2.15.17 (2021/03/10)
+
+- bundle SDKの更新
+    * [AdColony 4.4.1](https://github.com/AdColony/AdColony-Android-SDK/releases/tag/4.4.1)
+        * MavenリポジトリがMaven Centralに変更されました
+    * [AppLovin 9.14.12](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_9_14_12)
+        * MavenリポジトリがMaven Centralに変更されました
 ## v2.15.16 (2020/12/15)
 
 - MoPub用アダプターの安定性向上
