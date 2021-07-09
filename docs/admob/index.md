@@ -46,14 +46,14 @@ dependencies {
 1. adstir SDKにbundleされていないアドネットワークのSDKをダウンロードする
     * [Facebook](https://origincache.facebook.com/developers/resources/?id=audience-network-sdk-{{version.facebook}}.zip)
 1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードする
-    * [AdColony](https://google.bintray.com/mobile-ads-adapters-android/com/google/ads/mediation/adcolony/{{version.adcolony}}.0/adcolony-{{version.adcolony}}.0.aar)
-    * [AppLovin](https://google.bintray.com/mobile-ads-adapters-android/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
-    * [Facebook](https://google.bintray.com/mobile-ads-adapters-android/com/google/ads/mediation/facebook/{{version.facebook}}.0/facebook-{{version.facebook}}.0.aar)
-    * [maio](https://google.bintray.com/mobile-ads-adapters-android/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
-    * [MoPub](https://google.bintray.com/mobile-ads-adapters-android/com/google/ads/mediation/mopub/{{version.mopub}}.0/mopub-{{version.mopub}}.0.aar)
-    * [nend](https://google.bintray.com/mobile-ads-adapters-android/com/google/ads/mediation/nend/{{version.nend}}.0/nend-{{version.nend}}.0.aar)
-    * [Tapjoy](https://google.bintray.com/mobile-ads-adapters-android/com/google/ads/mediation/tapjoy/{{version.tapjoy}}.0/tapjoy-{{version.tapjoy}}.0.aar)
-    * [UnityAds](https://google.bintray.com/mobile-ads-adapters-android/com/google/ads/mediation/unity/{{version.unityads}}.0/unity-{{version.unityads}}.0.aar)
+    * [AdColony](https://jcenter.bintray.com/com/google/ads/mediation/adcolony/{{version.adcolony}}.0/adcolony-{{version.adcolony}}.0.aar)
+    * [AppLovin](https://jcenter.bintray.com/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
+    * [Facebook](https://jcenter.bintray.com/com/google/ads/mediation/facebook/{{version.facebook}}.0/facebook-{{version.facebook}}.0.aar)
+    * [maio](https://jcenter.bintray.com/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
+    * [MoPub](https://jcenter.bintray.com/com/google/ads/mediation/mopub/{{version.mopub}}.0/mopub-{{version.mopub}}.0.aar)
+    * [nend](https://jcenter.bintray.com/com/google/ads/mediation/nend/{{version.nend}}.0/nend-{{version.nend}}.0.aar)
+    * [Tapjoy](https://jcenter.bintray.com/com/google/ads/mediation/tapjoy/{{version.tapjoy}}.0/tapjoy-{{version.tapjoy}}.0.aar)
+    * [UnityAds](https://jcenter.bintray.com/com/google/ads/mediation/unity/{{version.unityads}}.0/unity-{{version.unityads}}.0.aar)
 1. ダウンロードした各SDKをプロジェクトへ追加する
 
 ## 広告の実装
