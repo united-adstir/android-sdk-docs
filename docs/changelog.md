@@ -1,4 +1,10 @@
 # 変更履歴
+## v2.15.19 (2021/08/10)
+
+- Google Mobile Ads SDK v20 への対応
+    - v20 SDKではAPIが変更されています
+    - AdMobをご利用でv20 SDKへ移行する場合は[こちら](https://developers.google.com/admob/android/migration)を参考にしてください
+    - APIの変更に伴い[リワード広告の従来のAPI](https://developers.google.com/admob/android/rewarded-video)のサポートを終了しました
 
 ## v2.15.18 (2021/06/07)
 
