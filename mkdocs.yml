@@ -125,6 +125,9 @@ nav:
       - APSの初期設定: aps/init.md
       - AdMobバナー: aps/banner.md
       - AdMobインタースティシャル: aps/interstitial.md
+  - AdManager:
+      - はじめに: admanager/index.md
+      # - メディエーション: admanager/network.md
   - 変更履歴: changelog.md
 
 plugins:
