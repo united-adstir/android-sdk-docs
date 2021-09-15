@@ -18,7 +18,7 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.15.19
+    adstir: 2.15.21
     adcolony: 4.4.1
     adcorsa: 2.0.0
     applovin: 9.14.12
@@ -49,19 +49,19 @@ markdown_extensions:
       slugify: !!python/name:pymdownx.slugs.uslugify
       permalink: true
       anchorlink: true
-  - pymdownx.tasklist:  
+  - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.details
 
 nav:
   - スタートガイド: index.md
-  - adstir: 
+  - adstir:
       - はじめに: adstir/index.md
-      - 初期設定: 
+      - 初期設定:
         - SDKの組み込み:
           - Android Studioによる組み込み: adstir/init/android_studio_integration.md
           - 手動組み込み: adstir/init/manual_integration.md
-      - 対応ネットワーク: 
+      - 対応ネットワーク:
         - 対応ネットワーク一覧: adstir/network/index.md
         - AdColony: adstir/network/adcolony.md
         - AdCorsa: adstir/network/adcorsa.md
@@ -80,15 +80,15 @@ nav:
           - バナー: adstir/ad/banner.md
           - WebViewアプリでの配信: adstir/ad/banner/webview.md
         - スワイプインタースティシャル: adstir/ad/swipe.md
-        - ネイティブ: 
+        - ネイティブ:
           - ネイティブライクバナー: adstir/ad/native/native_banner.md
           - フルカスタマイズ: adstir/ad/native/custom.md
           - ネイティブ動画: adstir/ad/native/native_video.md
-        - 動画リワード: 
+        - 動画リワード:
           - 実装: adstir/ad/reward/index.md
           - リワードコールバック: adstir/ad/reward/callback.md
         - 全画面インタースティシャル: adstir/ad/interstitial.md
-      - APIリファレンス: 
+      - APIリファレンス:
         - 一覧: adstir/api/index.md
         - バナー:
           - AdstirMraidView: adstir/api/banner/AdstirMraidView-Class-Reference.md
@@ -117,7 +117,7 @@ nav:
           - AdstirInterstitialListener: adstir/api/interstitial/AdstirInterstitialListener-Interface-Reference.md
       - テストスイート: adstir/testsuite/index.md
       - よくある質問: adstir/question.md
-  - AdMob: 
+  - AdMob:
       - はじめに: admob/index.md
       - AdMobメディエーション: admob/network.md
       - よくある質問: admob/question.md
