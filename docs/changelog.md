@@ -1,4 +1,29 @@
 # 変更履歴
+
+## v2.15.22 (2021/10/11)
+
+- 動画広告プレイヤーの安定性向上
+- MoPubのサポートOSバージョンを5.0以上に変更
+- AdCorsa SDKのバンドル終了
+- [facebookのウォータフォールでの配信終了](https://www.facebook.com/business/help/178983086270324?id=211412110064838)に伴い、AdMobパッケージのfacebookのバンドル終了
+- bundle SDKの更新
+    * [AdColony 4.6.2](https://github.com/AdColony/AdColony-Android-SDK/releases/tag/4.6.2)
+    * [AppLovin 10.3.3](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_10_3_3)
+    * [Maio 1.1.15](https://github.com/imobile-maio/maio-Android-SDK/releases/tag/v1.1.15)
+    * [MoPub 5.18.0](https://github.com/mopub/mopub-android-sdk/releases/tag/v5.18.0)
+        * MavenリポジトリがMaven Centralに変更されました
+    * [Nend 8.0.0](https://github.com/fan-ADN/nendSDK-Android-pub/releases/tag/8.0.0)
+        * Android 12の対応が含まれております
+        * AdMobパッケージにはNendのAdMob用アダプターは含まれておりません
+    * [TapJoy 12.8.1](https://dev.tapjoy.com/jp/android-sdk/Changelog#id-1281-2021-05-25)
+        * MavenリポジトリがTapJoyのリポジトリに変更されました
+    * TikTok 3.9.0.5
+        * MavenリポジトリがTikTokのリポジトリに変更されました
+    * [UnityAds 3.7.5](https://github.com/Unity-Technologies/unity-ads-android/releases/tag/3.7.5)
+        * MavenリポジトリがMaven Centralに変更されました
+    * [Zucks 4.8.6](https://ms.zucksadnetwork.com/media/sdk/manual/android)
+        * MavenリポジトリがZucksのリポジトリに変更されました
+
 ## v2.15.21 (2021/09/15)
 
 - AdMobメディエーションのアダプタ改修 (バナー)

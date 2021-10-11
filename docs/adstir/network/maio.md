@@ -9,8 +9,9 @@ Android 4.4以上
 ### Android Studioによる組み込み(推奨)
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。
 
-```groovy hl_lines="6 11"
+```groovy hl_lines="7 12"
 repositories {
+    google()
     maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url 'https://imobile-maio.github.io/maven' }
 }
@@ -25,7 +26,7 @@ dependencies {
 
 ### 手動組み込み
 #### SDKの準備
-maioのSDKは、VideoAdSDKBundledのパッケージに同梱されております。  
+maioのSDKは、VideoAdSDKBundledのパッケージに同梱されております。
 作成された動画枠の`動画SDK (Android / AAR形式)`より取得いただけます。
 
 #### SDKの組み込み

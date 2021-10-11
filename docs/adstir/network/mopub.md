@@ -2,14 +2,14 @@
 
 ## 対応OS
 
-Android 4.4以上
+Android 5.0以上
 
 ## SDKの組み込み
 
 ### Android Studioによる組み込み(推奨)
 アプリケーションレベルのbuild.gradleにコンパイルオプションとmavenリポジトリと依存関係を設定します。
 
-```groovy hl_lines="1 6 12 24"
+```groovy hl_lines="1 6 14 26"
 android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -18,6 +18,8 @@ android {
 }
 
 repositories {
+    google()
+    mavenCentral()
     maven { url 'https://cdnp.ad-stir.com/m2' }
 }
 

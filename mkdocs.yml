@@ -18,20 +18,18 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.15.21
-    adcolony: 4.4.1
-    adcorsa: 2.0.0
-    applovin: 9.14.12
-    facebook: 6.1.0
+    adstir: 2.15.22
+    adcolony: 4.6.2
+    applovin: 10.3.3
     imobile: 2.0.22
-    maio: 1.1.13
-    mopub: 5.15.0
-    nend: 7.0.0
-    tapjoy: 12.6.1
-    tiktok: 3.1.5.1
-    unityads: 3.4.8
-    zucks: 4.6.1
-  sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.15.2-SampleApp.zip'
+    maio: 1.1.15
+    mopub: 5.18.0
+    nend: 8.0.0
+    tapjoy: 12.8.1
+    tiktok: 3.9.0.5
+    unityads: 3.7.5
+    zucks: 4.8.6
+  sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.15.22-SampleApp.zip'
 
 # CSSの設定
 extra_css:
@@ -64,7 +62,6 @@ nav:
       - 対応ネットワーク:
         - 対応ネットワーク一覧: adstir/network/index.md
         - AdColony: adstir/network/adcolony.md
-        - AdCorsa: adstir/network/adcorsa.md
         - AppLovin: adstir/network/applovin.md
         - imobile: adstir/network/imobile.md
         - maio: adstir/network/maio.md

@@ -9,8 +9,10 @@ Android 4.4以上
 ### Android Studioによる組み込み(推奨)
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。
 
-```groovy hl_lines="5 10"
+```groovy hl_lines="7 12"
 repositories {
+    google()
+    mavenCentral()
     maven { url 'https://cdnp.ad-stir.com/m2' }
 }
 
@@ -24,7 +26,7 @@ dependencies {
 
 ### 手動組み込み
 #### SDKの準備
-AppLovinのSDKは、VideoAdSDKBundledのパッケージに同梱されております。  
+AppLovinのSDKは、VideoAdSDKBundledのパッケージに同梱されております。
 作成された動画枠の`動画SDK (Android / AAR形式)`より取得いただけます。
 
 #### SDKの組み込み

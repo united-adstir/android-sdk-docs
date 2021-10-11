@@ -2,12 +2,13 @@
 
 ## Google AdManager/AdMobでadstirの広告が表示されません
 
-AdMobメディエーションアダプタがプロジェクトに追加されていない可能性があります。  
+AdMobメディエーションアダプタがプロジェクトに追加されていない可能性があります。
 追加されていない場合は、下記のいずれかの方法でプロジェクトに追加してください。
 
-- Android Studioによる組み込み(build.gradle)  
-```groovy hl_lines="5 9"
+- Android Studioによる組み込み(build.gradle)
+```groovy hl_lines="6 10"
 repositories {
+    google()
     maven { url 'https://cdnp.ad-stir.com/m2' }
 }
 
@@ -18,7 +19,7 @@ dependencies {
 }
 ```
 
-- 手動組み込み  
+- 手動組み込み
 adstir SDKのzipファイルに同梱されている`adstir-admob-mediation-adapter.aar`をプロジェクトに追加してください。
 
 ## レポートに表示回数が反映されません

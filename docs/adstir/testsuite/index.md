@@ -24,8 +24,9 @@ adstirテストスイートを利用することで、提携対応ネットワ�
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。
 
-```groovy hl_lines="5 7"
+```groovy hl_lines="6 8"
 repositories {
+    google()
     maven { url 'https://cdnp.ad-stir.com/m2' }
 }
 

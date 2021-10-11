@@ -2,14 +2,14 @@
 
 ## 前提条件
 
-- Android Studio 3.2以上  
-- minSdkVersion 19以上  
-- compileSdkVersion 28以上  
+- Android Studio 3.2以上
+- minSdkVersion 19以上
+- compileSdkVersion 28以上
 - AndroidX 必須
 
 ## 事前準備
 
-[AdManagerのスタートガイド](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start)を参考に、AdManagerの設定をおこなってください。  
+[AdManagerのスタートガイド](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start)を参考に、AdManagerの設定をおこなってください。
 Google Mobile Ads SDKは20.0.0以上をお使いください。
 
 [Ad Manager app ID](https://developers.google.com/ad-manager/mobile-ads-sdk/android/quick-start#configure_your_app)は弊社で登録後、営業担当よりお伝えします。
@@ -22,18 +22,22 @@ Google Mobile Ads SDKは20.0.0以上をお使いください。
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="9 25"
+```groovy hl_lines="13 28"
 repositories {
+    google()
+    mavenCentral()
     maven { url 'https://cdnp.ad-stir.com/m2' }
-    maven { url 'https://github.com/glossom-dev/GlossomAds-Android/raw/master' } // adcorsa
-    maven { url 'https://imobile-maio.github.io/maven' } // maio
+    maven { url "https://imobile-maio.github.io/maven" } // maio
     maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
-    maven { url 'https://imobile.github.io/adnw-sdk-android' } // imobile
+    maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
+    maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // zucks
+    maven { url "https://sdk.tapjoy.com/" } // Tapjoy
+    maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
 }
 
 dependencies {
     // 利用するadstirのSDKバージョンを設定します
-    def adstir_version = "{{version.adstir}}" 
+    def adstir_version = "{{version.adstir}}"
     implementation "com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}"
     implementation "com.ad-stir.mediationadapter:adstir-admob-mediation-adapter:${adstir_version}"
 
@@ -45,7 +49,6 @@ dependencies {
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-nend:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-tapjoy:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-tiktok:${adstir_version}")
-    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-adcorsa:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-adcolony:${adstir_version}")
 }
 ```
@@ -82,5 +85,5 @@ ad_unit_idは営業担当よりお伝えしますが、もともとのad_unit_id
         アダプティブバナーを実装する場合は、最新バージョンのGoogle Mobile Ads SDK をご利用ください。
 
 ### テストデバイスの追加
-[開発時にはテスト端末を追加する](https://developers.google.com/ad-manager/mobile-ads-sdk/android/test-ads#add_your_test_device_programmatically)より、広告リクエスト時にデバイスIDの設定をおこなってください。  
+[開発時にはテスト端末を追加する](https://developers.google.com/ad-manager/mobile-ads-sdk/android/test-ads#add_your_test_device_programmatically)より、広告リクエスト時にデバイスIDの設定をおこなってください。
 こちらの設定をおこなった際には、アプリケーションのリリース前には該当コードの削除をお願いいたします。

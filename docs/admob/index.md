@@ -2,9 +2,9 @@
 
 ## 前提条件
 
-- Android Studio 3.2以上  
-- minSdkVersion 19以上  
-- compileSdkVersion 28以上  
+- Android Studio 3.2以上
+- minSdkVersion 19以上
+- compileSdkVersion 28以上
 - AndroidX 必須
 
 !!! Info
@@ -12,7 +12,7 @@
 
 ## 事前準備
 
-[AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。  
+[AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。
 Google Mobile Ads SDKは17.2.0以上をお使いください。
 
 ### メディエーションの準備
@@ -23,18 +23,22 @@ Google Mobile Ads SDKは17.2.0以上をお使いください。
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="9 13"
+```groovy hl_lines="13 17"
 repositories {
+    google()
+    mavenCentral()
     maven { url 'https://cdnp.ad-stir.com/m2' }
-    maven { url 'https://github.com/glossom-dev/GlossomAds-Android/raw/master' } // adcorsa
-    maven { url 'https://imobile-maio.github.io/maven' } // maio
+    maven { url "https://imobile-maio.github.io/maven" } // maio
     maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
-    maven { url 'https://imobile.github.io/adnw-sdk-android' } // imobile
+    maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
+    maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // zucks
+    maven { url "https://sdk.tapjoy.com/" } // Tapjoy
+    maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
 }
 
 dependencies {
     // 利用するadstirのSDKバージョンを設定します
-    def adstir_version = "{{version.adstir}}" 
+    def adstir_version = "{{version.adstir}}"
     implementation "com.ad-stir.mediationadapter:admob-package:${adstir_version}"
 }
 ```
@@ -42,13 +46,10 @@ dependencies {
 #### 手動で導入する場合
 
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込む
-1. [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを入れる 
-1. adstir SDKにbundleされていないアドネットワークのSDKをダウンロードする
-    * [Facebook](https://origincache.facebook.com/developers/resources/?id=audience-network-sdk-{{version.facebook}}.zip)
+1. [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを入れる
 1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードする
     * [AdColony](https://jcenter.bintray.com/com/google/ads/mediation/adcolony/{{version.adcolony}}.0/adcolony-{{version.adcolony}}.0.aar)
     * [AppLovin](https://jcenter.bintray.com/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
-    * [Facebook](https://jcenter.bintray.com/com/google/ads/mediation/facebook/{{version.facebook}}.0/facebook-{{version.facebook}}.0.aar)
     * [maio](https://jcenter.bintray.com/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
     * [MoPub](https://jcenter.bintray.com/com/google/ads/mediation/mopub/{{version.mopub}}.0/mopub-{{version.mopub}}.0.aar)
     * [nend](https://jcenter.bintray.com/com/google/ads/mediation/nend/{{version.nend}}.0/nend-{{version.nend}}.0.aar)
@@ -72,5 +73,5 @@ AdMobの実装ガイドをご覧ください
 また、アドネットワークによっては追加で実装する必要がございます。 [追加実装](network#追加実装)をご覧になり、実装をお願いします。
 
 ### テストデバイスの追加
-[開発時にはテスト端末を追加する](https://developers.google.com/admob/android/test-ads?hl=ja#add_your_test_device)より、広告リクエスト時にデバイスIDの設定をおこなってください。  
+[開発時にはテスト端末を追加する](https://developers.google.com/admob/android/test-ads?hl=ja#add_your_test_device)より、広告リクエスト時にデバイスIDの設定をおこなってください。
 こちらの設定をおこなった際には、アプリケーションのリリース前には該当コードの削除をお願いいたします。
