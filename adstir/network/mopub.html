@@ -411,18 +411,6 @@
 
 
   <li class="md-nav__item">
-    <a href="adcorsa.html" title="AdCorsa" class="md-nav__link">
-      AdCorsa
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="applovin.html" title="AppLovin" class="md-nav__link">
       AppLovin
     </a>
@@ -1529,7 +1517,7 @@
                 
                 <h1 id="mopub広告の導入"><a class="toclink" href="#mopub広告の導入">MoPub広告の導入</a><a class="headerlink" href="#mopub広告の導入" title="Permanent link">&para;</a></h1>
 <h2 id="対応os"><a class="toclink" href="#対応os">対応OS</a><a class="headerlink" href="#対応os" title="Permanent link">&para;</a></h2>
-<p>Android 4.4以上</p>
+<p>Android 5.0以上</p>
 <h2 id="sdkの組み込み"><a class="toclink" href="#sdkの組み込み">SDKの組み込み</a><a class="headerlink" href="#sdkの組み込み" title="Permanent link">&para;</a></h2>
 <h3 id="android-studioによる組み込み推奨"><a class="toclink" href="#android-studioによる組み込み推奨">Android Studioによる組み込み(推奨)</a><a class="headerlink" href="#android-studioによる組み込み推奨" title="Permanent link">&para;</a></h3>
 <p>アプリケーションレベルのbuild.gradleにコンパイルオプションとmavenリポジトリと依存関係を設定します。</p>
@@ -1541,12 +1529,14 @@
 <span class="hll"><span class="o">}</span>
 </span>
 <span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">google</span><span class="o">()</span>
+    <span class="n">mavenCentral</span><span class="o">()</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
 <span class="o">}</span>
 
 <span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
 </span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.21&quot;</span>
+    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.22&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:adstir-mediationadapter-mopub:${adstir_version}&quot;</span>
     <span class="c1">// ご利用されているライブラリが競合した際は下記のバージョンをご利用されているライブラリのバージョンへ書き換えてください。</span>

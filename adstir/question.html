@@ -409,18 +409,6 @@
 
 
   <li class="md-nav__item">
-    <a href="network/adcorsa.html" title="AdCorsa" class="md-nav__link">
-      AdCorsa
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="network/applovin.html" title="AppLovin" class="md-nav__link">
       AppLovin
     </a>
@@ -1447,24 +1435,25 @@
                 
                 <h1 id="よくある質問"><a class="toclink" href="#よくある質問">よくある質問</a><a class="headerlink" href="#よくある質問" title="Permanent link">&para;</a></h1>
 <h2 id="google-admanageradmobでadstirの広告が表示されません"><a class="toclink" href="#google-admanageradmobでadstirの広告が表示されません">Google AdManager/AdMobでadstirの広告が表示されません</a><a class="headerlink" href="#google-admanageradmobでadstirの広告が表示されません" title="Permanent link">&para;</a></h2>
-<p>AdMobメディエーションアダプタがプロジェクトに追加されていない可能性があります。<br />
+<p>AdMobメディエーションアダプタがプロジェクトに追加されていない可能性があります。
 追加されていない場合は、下記のいずれかの方法でプロジェクトに追加してください。</p>
 <ul>
 <li>
-<p>Android Studioによる組み込み(build.gradle)<br />
+<p>Android Studioによる組み込み(build.gradle)
 <div class="codehilite"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">google</span><span class="o">()</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
 <span class="o">}</span>
 
 <span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
 </span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.21&quot;</span>
+    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.22&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:adstir-admob-mediation-adapter:${adstir_version}&quot;</span>
 <span class="hll"><span class="o">}</span>
 </span></pre></div></p>
 </li>
 <li>
-<p>手動組み込み<br />
+<p>手動組み込み
 adstir SDKのzipファイルに同梱されている<code>adstir-admob-mediation-adapter.aar</code>をプロジェクトに追加してください。</p>
 </li>
 </ul>

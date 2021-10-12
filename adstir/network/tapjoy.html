@@ -411,18 +411,6 @@
 
 
   <li class="md-nav__item">
-    <a href="adcorsa.html" title="AdCorsa" class="md-nav__link">
-      AdCorsa
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="applovin.html" title="AppLovin" class="md-nav__link">
       AppLovin
     </a>
@@ -1534,12 +1522,14 @@
 <h3 id="android-studioによる組み込み推奨"><a class="toclink" href="#android-studioによる組み込み推奨">Android Studioによる組み込み(推奨)</a><a class="headerlink" href="#android-studioによる組み込み推奨" title="Permanent link">&para;</a></h3>
 <p>アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。</p>
 <div class="codehilite"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">google</span><span class="o">()</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
+    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s2">&quot;https://sdk.tapjoy.com/&quot;</span> <span class="o">}</span>
 <span class="o">}</span>
 
 <span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
 </span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.21&quot;</span>
+    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.22&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:adstir-mediationadapter-tapjoy:${adstir_version}&quot;</span>
 <span class="hll"><span class="o">}</span>
@@ -1547,7 +1537,7 @@
 
 <h3 id="手動組み込み"><a class="toclink" href="#手動組み込み">手動組み込み</a><a class="headerlink" href="#手動組み込み" title="Permanent link">&para;</a></h3>
 <h4 id="sdkの準備"><a class="toclink" href="#sdkの準備">SDKの準備</a><a class="headerlink" href="#sdkの準備" title="Permanent link">&para;</a></h4>
-<p>TapJoyのSDKは、VideoAdSDKBundledのパッケージに同梱されております。<br />
+<p>TapJoyのSDKは、VideoAdSDKBundledのパッケージに同梱されております。
 作成された動画枠の<code>動画SDK (Android / AAR形式)</code>より取得いただけます。</p>
 <h4 id="sdkの組み込み_1"><a class="toclink" href="#sdkの組み込み_1">SDKの組み込み</a><a class="headerlink" href="#sdkの組み込み_1" title="Permanent link">&para;</a></h4>
 <p>初期設定の<a href="../init/manual_integration.html">SDKの手動組み込み</a>の完了後、下記の手順で追加してください。</p>
