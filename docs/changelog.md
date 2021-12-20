@@ -1,5 +1,22 @@
 # 変更履歴
 
+## v2.15.23 (2021/12/20)
+
+- adstir SDKのcompileSdkVersion/targetSdkVersionを31に変更
+- Android 12対応
+    - adstir SDKに`com.google.android.gms.permission.AD_ID`の権限を追加しました
+        - ターゲットAPIレベル31以上を対象とするアプリで広告IDを取得するために`AD_ID`の権限が必要になるアップデートが2022年に予定されております
+        - 詳細については[こちら](https://support.google.com/googleplay/android-developer/answer/6048248?hl=ja&ref_topic=2364761)をご覧ください
+- SDKの安定性向上
+- bundle SDKの更新
+    - [AdColony 4.6.5](https://github.com/AdColony/AdColony-Android-SDK/releases/tag/4.6.5)
+        - Android 12の対応が含まれております
+    - [AppLovin 10.3.5](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_10_3_5)
+    - [Maio 1.1.16](https://github.com/imobile-maio/maio-Android-SDK/releases/tag/v1.1.16)
+        - Google Play Console上でエラーが発生する場合がある問題が解消されております
+    - [Nend 8.0.1](https://github.com/fan-ADN/nendSDK-Android-pub/releases/tag/8.0.1)
+    - TikTok 4.1.1.2
+
 ## v2.15.22 (2021/10/11)
 
 - 動画広告プレイヤーの安定性向上
