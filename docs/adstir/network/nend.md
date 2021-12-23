@@ -9,11 +9,11 @@ Android 4.4以上
 ### Android Studioによる組み込み(推奨)
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。
 
-```groovy hl_lines="7 17"
+```groovy hl_lines="7 20"
 repositories {
     google()
     maven { url 'https://cdnp.ad-stir.com/m2' }
-    maven { url 'http://fan-adn.github.io/nendSDK-Android-lib/library' }
+    maven { url 'https://fan-adn.github.io/nendSDK-Android-lib/library' }
 }
 
 dependencies {
@@ -23,8 +23,11 @@ dependencies {
     implementation "com.ad-stir.mediationadapter:adstir-mediationadapter-nend:${adstir_version}"
     // ご利用されているライブラリが競合した際は下記のバージョンをご利用されているライブラリのバージョンへ書き換えてください。
     // configurations.all {
-    //     resolutionStrategy.force "androidx.legacy:legacy-support-v4:x.x.x"
+    //     resolutionStrategy.force "org.jetbrains.kotlin:kotlin-stdlib-jdk7:x.x.x"
+    //     resolutionStrategy.force "org.jetbrains.kotlinx:kotlinx-coroutines-android:x.x.x"
+    //     resolutionStrategy.force "androidx.appcompat:appcompat:x.x.x"
     //     resolutionStrategy.force "androidx.constraintlayout:constraintlayout:x.x.x"
+    //     resolutionStrategy.force "androidx.preference:preference:x.x.x"
     // }
 }
 ```
@@ -41,10 +44,12 @@ nendのSDKは、VideoAdSDKBundledのパッケージに同梱されておりま�
 2. File -> Project Structure -> Dependencies -> app より`nendSDK-x.x.x`, `adstir-mediationadapter-adapter-nend`を追加します。
 3. アプリケーションレベルのbuild.gradleに依存関係を設定します。
 
-```groovy hl_lines="1 4"
+```groovy hl_lines="1 7"
 dependencies {
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0' // androidx.appcompatが定義済みの場合は不要
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.32'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.preference:preference:1.1.1'
 }
 ```

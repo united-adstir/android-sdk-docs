@@ -18,15 +18,15 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.15.22
-    adcolony: 4.6.2
-    applovin: 10.3.3
+    adstir: 2.15.23
+    adcolony: 4.6.5
+    applovin: 10.3.5
     imobile: 2.0.22
-    maio: 1.1.15
+    maio: 1.1.16
     mopub: 5.18.0
-    nend: 8.0.0
+    nend: 8.0.1
     tapjoy: 12.8.1
-    tiktok: 3.9.0.5
+    tiktok: 4.1.1.2
     unityads: 3.7.5
     zucks: 4.8.6
   sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.15.22-SampleApp.zip'
