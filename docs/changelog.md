@@ -177,4 +177,4 @@
 
 !!! Warning "Google AdManager/AdMobをご利用でv2.15.0以前のadstir SDKからアップデートされる皆様へ"
     Google Mobile Ads SDKの変更に伴い、adstir SDK本体(adstir-android-webviewsdk)に同梱していたAdMobメディエーションアダプタを分離しました。
-    Google AdManager/AdMobをご利用でv2.15.0以前のadstir SDKからアップデートされる場合は[こちら](adstir/question.md#google-admanageradmobでadstirの広告が表示されません)をご覧ください。
+    Google AdManager/AdMobをご利用でv2.15.0以前のadstir SDKからアップデートされる場合は[こちら](adstir/info/question.md#google-admanageradmobでadstirの広告が表示されません)をご覧ください。

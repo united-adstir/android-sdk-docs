@@ -67,3 +67,10 @@ AdRegistration.enableTesting(true);
 
 * [バナー広告](banner.md)
 * [インタースティシャル広告](interstitial.md)
+
+## Google Play データ セーフティ セクションに記載する内容
+
+2022年4月以降、Google Playで公開するアプリでユーザーデータをどの様に収集、処理するかを申告する必要がございます。
+枠しくは「[Google Play のデータ セーフティ セクションの情報を提供する](https://support.google.com/googleplay/android-developer/answer/10787469?hl=ja)」ページをご覧ください。
+
+APSの記載内容につきましては営業担当にお問い合わせください。
