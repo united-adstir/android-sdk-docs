@@ -113,7 +113,10 @@ nav:
           - AdstirInterstitial: adstir/api/interstitial/AdstirInterstitial-Class-Reference.md
           - AdstirInterstitialListener: adstir/api/interstitial/AdstirInterstitialListener-Interface-Reference.md
       - テストスイート: adstir/testsuite/index.md
-      - よくある質問: adstir/question.md
+      - その他:
+        - よくある質問: adstir/info/question.md
+        - adstir SDKのGoogle Play データ セーフティ セクション: adstir/info/safety_section.md
+        - 提携対応ネットワークのGoogle Play データ セーフティ セクション: adstir/info/nw_safety_section.md
   - AdMob:
       - はじめに: admob/index.md
       - AdMobメディエーション: admob/network.md
