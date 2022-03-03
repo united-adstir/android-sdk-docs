@@ -6,6 +6,8 @@ AdMobをご利用される場合は[こちら](admob/index.md)をご覧くださ
 
 AdMob + APSをご利用される場合は[こちら](aps/init.md)をご覧ください。
 
+AdManagerをご利用される場合は[こちら](admanager/index.md)をご覧ください。
+
 ## サンプルアプリ
 [こちら]({{sample_url}})より、adstirSDKのサンプルプロジェクトをダウンロードすることができます。
 

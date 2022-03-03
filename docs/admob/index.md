@@ -13,7 +13,7 @@
 ## 事前準備
 
 [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。
-Google Mobile Ads SDKは17.2.0以上をお使いください。
+AdMobアダプタはGoogle Mobile Ads SDK version 20.6.0でビルドおよびテストを行なっています。
 
 ### メディエーションの準備
 
@@ -51,7 +51,6 @@ dependencies {
     * [AdColony](https://jcenter.bintray.com/com/google/ads/mediation/adcolony/{{version.adcolony}}.0/adcolony-{{version.adcolony}}.0.aar)
     * [AppLovin](https://jcenter.bintray.com/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
     * [maio](https://jcenter.bintray.com/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
-    * [MoPub](https://jcenter.bintray.com/com/google/ads/mediation/mopub/{{version.mopub}}.0/mopub-{{version.mopub}}.0.aar)
     * [nend](https://jcenter.bintray.com/com/google/ads/mediation/nend/{{version.nend}}.0/nend-{{version.nend}}.0.aar)
     * [Tapjoy](https://jcenter.bintray.com/com/google/ads/mediation/tapjoy/{{version.tapjoy}}.0/tapjoy-{{version.tapjoy}}.0.aar)
     * [UnityAds](https://jcenter.bintray.com/com/google/ads/mediation/unity/{{version.unityads}}.0/unity-{{version.unityads}}.0.aar)
@@ -69,8 +68,6 @@ AdMobの実装ガイドをご覧ください
 
     !!! warning
         アダプティブバナーを実装する場合は、最新バージョンのGoogle Mobile Ads SDK をご利用ください。
-
-また、アドネットワークによっては追加で実装する必要がございます。 [追加実装](network#追加実装)をご覧になり、実装をお願いします。
 
 ### テストデバイスの追加
 [開発時にはテスト端末を追加する](https://developers.google.com/admob/android/test-ads?hl=ja#add_your_test_device)より、広告リクエスト時にデバイスIDの設定をおこなってください。

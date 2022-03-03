@@ -1,5 +1,17 @@
 # 変更履歴
 
+## v2.15.24 (2022/03/03)
+
+- MoPub SDKのバンドル終了
+- bundle SDKの更新
+    - [AppLovin 11.1.0](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_11_1_0)
+    - IMobile 2.0.23
+    - [TapJoy 12.9.0](https://dev.tapjoy.com/jp/android-sdk/Changelog#id-1290-2022-01-13)
+    - TikTok 4.2.5.3
+    - [UnityAds 4.0.0](https://github.com/Unity-Technologies/unity-ads-android/releases/tag/4.0.0)
+- AdMobアダプタ ビルド・テスト
+    - Google Mobile Ads SDK version 20.6.0
+
 ## v2.15.23 (2021/12/20)
 
 - adstir SDKのcompileSdkVersion/targetSdkVersionを31に変更

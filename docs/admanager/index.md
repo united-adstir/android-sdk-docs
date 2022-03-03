@@ -45,7 +45,6 @@ dependencies {
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-imobile:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-maio:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-unityads:${adstir_version}")
-    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-mopub:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-nend:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-tapjoy:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-tiktok:${adstir_version}")
