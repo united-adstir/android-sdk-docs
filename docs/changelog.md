@@ -1,5 +1,14 @@
 # 変更履歴
 
+
+## v2.15.25 (2022/03/15)
+
+- bundle SDKの更新
+    - [UnityAds 4.0.1](https://docs.unity3d.com/Packages/com.unity.ads@4.0/changelog/CHANGELOG.html?utm_campaign=Operate-Solutions_global_Transactional_2022-01-dg-operate-unity-ads-SDK4.0.1-service%20email&utm_content=2022-01-dg-operate-unity-ads-SDK4.0.1-service%20email&utm_medium=email&utm_source=Eloqua#401---2022-02-02)
+        - Google Play Storeに関するデータ収集の修正が含まれております
+- AdMobアダプタ ビルド・テスト
+    - Google Mobile Ads SDK version 20.6.0
+
 ## v2.15.24 (2022/03/03)
 
 - MoPub SDKのバンドル終了
