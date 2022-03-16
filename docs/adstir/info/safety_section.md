@@ -1,7 +1,7 @@
 # adstir SDKのGoogle Play データ セーフティ セクション
 
 2022年4月以降、Google Playで公開するアプリでユーザーデータをどの様に収集、処理するかを申告する必要がございます。
-枠しくは「[Google Play のデータ セーフティ セクションの情報を提供する](https://support.google.com/googleplay/android-developer/answer/10787469?hl=ja)」ページをご覧ください。
+詳しくは「[Google Play のデータ セーフティ セクションの情報を提供する](https://support.google.com/googleplay/android-developer/answer/10787469?hl=ja)」ページをご覧ください。
 
 提携対応ネットワークのGoogle Play データ セーフティ セクションは[こちら](./nw_safety_section.md)のページをご覧ください。
 
