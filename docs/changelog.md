@@ -1,5 +1,13 @@
 # 変更履歴
 
+## v2.15.26 (2022/03/28)
+
+- bundle SDKの更新
+    - [TapJoy 12.9.1](https://dev.tapjoy.com/jp/android-sdk/Changelog#id-1291-2022-03-01)
+        - Google Play Storeでの警告に関する修正が含まれております
+        - AdMobパッケージにはTapJoyのAdMob用アダプターは含まれておりません
+- AdMobアダプタ ビルド・テスト
+    - Google Mobile Ads SDK version 20.6.0
 
 ## v2.15.25 (2022/03/15)
 
