@@ -18,7 +18,7 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.15.26
+    adstir: 2.15.27
     adcolony: 4.6.5
     applovin: 11.0.0
     imobile: 2.0.23
@@ -118,6 +118,7 @@ nav:
   - AdMob:
       - はじめに: admob/index.md
       - AdMobメディエーション: admob/network.md
+      - AdMob配信設定: admob/setting.md
       - よくある質問: admob/question.md
   - APS:
       - APSの初期設定: aps/init.md
