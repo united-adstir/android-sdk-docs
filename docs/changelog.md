@@ -1,5 +1,12 @@
 # 変更履歴
 
+## v2.15.27 (2022/04/07)
+
+- AdMobバナーアダプタの追加/改修
+    - ご自身でAdMobの配信設定をされる方は[こちら](admob/setting.md)をご覧ください。
+- AdMobアダプタ ビルド・テスト
+    - Google Mobile Ads SDK version 20.6.0
+
 ## v2.15.26 (2022/03/28)
 
 - bundle SDKの更新

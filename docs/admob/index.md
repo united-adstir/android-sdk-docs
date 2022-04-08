@@ -48,12 +48,12 @@ dependencies {
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込む
 1. [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを入れる
 1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードする
-    * [AdColony](https://jcenter.bintray.com/com/google/ads/mediation/adcolony/{{version.adcolony}}.0/adcolony-{{version.adcolony}}.0.aar)
-    * [AppLovin](https://jcenter.bintray.com/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
-    * [maio](https://jcenter.bintray.com/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
-    * [nend](https://jcenter.bintray.com/com/google/ads/mediation/nend/{{version.nend}}.0/nend-{{version.nend}}.0.aar)
-    * [Tapjoy](https://jcenter.bintray.com/com/google/ads/mediation/tapjoy/{{version.tapjoy}}.0/tapjoy-{{version.tapjoy}}.0.aar)
-    * [UnityAds](https://jcenter.bintray.com/com/google/ads/mediation/unity/{{version.unityads}}.0/unity-{{version.unityads}}.0.aar)
+    * [AdColony](https://dl.google.com/android/maven2/com/google/ads/mediation/adcolony/{{version.adcolony}}.0/adcolony-{{version.adcolony}}.0.aar)
+    * [AppLovin](https://dl.google.com/android/maven2/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
+    * [maio](https://dl.google.com/android/maven2/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
+    * [nend](https://dl.google.com/android/maven2/com/google/ads/mediation/nend/{{version.nend}}.0/nend-{{version.nend}}.0.aar)
+    * [Tapjoy](https://dl.google.com/android/maven2/com/google/ads/mediation/tapjoy/{{version.tapjoy}}.0/tapjoy-{{version.tapjoy}}.0.aar)
+    * [UnityAds](https://dl.google.com/android/maven2/com/google/ads/mediation/unity/{{version.unityads}}.0/unity-{{version.unityads}}.0.aar)
 1. ダウンロードした各SDKをプロジェクトへ追加する
 
 ## 広告の実装
