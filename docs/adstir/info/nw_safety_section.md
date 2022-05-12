@@ -31,7 +31,7 @@
 
 ## TikTok
 
-* [Provide information for Google Play's Data Disclosure](https://www.pangleglobal.com/support/doc/6203710f2b4ba300514c71a5)
+* [App privacy details on the Google Play JP | Pangle](https://www.pangleglobal.com/jp/integration/app-privacy-details-gp)
 
 ## UnityAds
 
