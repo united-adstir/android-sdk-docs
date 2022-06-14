@@ -13,7 +13,7 @@
 ## 事前準備
 
 [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。
-AdMobアダプタはGoogle Mobile Ads SDK version 20.6.0でビルドおよびテストを行なっています。
+AdMobアダプタはGoogle Mobile Ads SDK version {{ version.google }}でビルドおよびテストを行なっています。
 
 ### メディエーションの準備
 
