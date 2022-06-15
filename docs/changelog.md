@@ -1,5 +1,18 @@
 # 変更履歴
 
+## v2.15.28 (2022/06/14)
+
+- bundle SDKの更新
+    - [AdColony 4.7.1](https://github.com/AdColony/AdColony-Android-SDK/releases/tag/4.7.1)
+    - [AppLovin 11.3.3](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_11_3_3)
+    - [Nend 8.1.0](https://github.com/fan-ADN/nendSDK-Android-pub/releases/tag/8.1.0)
+    - TikTok 4.3.0.9
+    - [UnityAds 4.1.0](https://github.com/Unity-Technologies/unity-ads-android/releases/tag/4.1.0)
+- TikTokアダプターの安定性向上
+- バナー広告の安定性向上
+- AdMobアダプタ ビルド・テスト
+    - Google Mobile Ads SDK version 21.0.0
+
 ## v2.15.27 (2022/04/07)
 
 - AdMobバナーアダプタの追加/改修
