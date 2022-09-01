@@ -1,5 +1,15 @@
 # 変更履歴
 
+## v2.15.29 (2022/09/01)
+
+* bundle SDKの更新
+    * [AdColony 4.8.0](https://github.com/AdColony/AdColony-Android-SDK/releases/tag/4.8.0)
+    * [AppLovin 11.4.4](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_11_4_4)
+    * [Nend 8.2.0](https://github.com/fan-ADN/nendSDK-Android-pub/releases/tag/8.2.0)
+    * [UnityAds 4.3.0](https://github.com/Unity-Technologies/unity-ads-android/releases/tag/4.3.0)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 21.1.0
+
 ## v2.15.28 (2022/06/14)
 
 - bundle SDKの更新
