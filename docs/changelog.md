@@ -1,5 +1,15 @@
 # 変更履歴
 
+## v2.15.30 (2022/11/08)
+
+* bundle SDKの更新
+    * [AppLovin 11.5.3](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_11_5_3)
+    * [Nend 9.0.0](https://github.com/fan-ADN/nendSDK-Android-pub/releases/tag/9.0.0)
+        * Android 13向けの改修が含まれております
+* 動画リワード広告の安定性向上
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 21.3.0
+
 ## v2.15.29 (2022/09/01)
 
 * bundle SDKの更新
