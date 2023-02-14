@@ -1,5 +1,17 @@
 # 変更履歴
 
+## v2.15.31 (2023/02/14)
+
+* bundle SDKの更新
+    * [AppLovin 11.7.1](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_11_7_1)
+    * IMobile 2.3.0
+    * [TapJoy 12.11.1](https://dev.tapjoy.com/jp/android-sdk/Changelog#id-12111-2022-12-01)
+    * TikTok 4.9.0.9
+    * [Zucks 5.0.0](https://ms.zucksadnetwork.com/media/sdk/manual/android/)
+    * [UnityAds 4.5.0](https://github.com/Unity-Technologies/unity-ads-android/releases/tag/4.5.0)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 21.5.0
+
 ## v2.15.30 (2022/11/08)
 
 * bundle SDKの更新
