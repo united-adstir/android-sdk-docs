@@ -1592,7 +1592,13 @@
 <ol>
 <li>File -&gt; New -&gt; New Module -&gt; Import .JAR/.AAR Package より<code>unity-ads.aar</code>, <code>adstir-mediationadapter-adapter-unityads.aar</code>を追加します。</li>
 <li>File -&gt; Project Structure -&gt; Dependencies -&gt; app より<code>unity-ads</code>, <code>adstir-mediationadapter-adapter-unityads</code>を追加します。</li>
+<li>アプリケーションレベルのbuild.gradleに依存関係を設定します。</li>
 </ol>
+<div class="codehilite"><pre><span></span><span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
+</span>    <span class="n">implementation</span> <span class="s1">&#39;org.jetbrains.kotlin:kotlin-stdlib:1.4.32&#39;</span>
+    <span class="n">implementation</span> <span class="s1">&#39;org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3&#39;</span>
+<span class="hll"><span class="o">}</span>
+</span></pre></div>
                 
                   
                 
