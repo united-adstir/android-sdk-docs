@@ -8,6 +8,8 @@ AdMob + APSをご利用される場合は[こちら](aps/init.md)をご覧くだ
 
 AdManagerをご利用される場合は[こちら](admanager/index.md)をご覧ください。
 
+AppLovin MAXをご利用される場合は[こちら](max/index.md)をご覧ください。
+
 ## サンプルアプリ
 [こちら]({{sample_url}})より、adstirSDKのサンプルプロジェクトをダウンロードすることができます。
 

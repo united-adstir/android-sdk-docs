@@ -1,5 +1,15 @@
 # 変更履歴
 
+## v2.15.32 (2023/04/11)
+
+* bundle SDKの更新
+    * [AppLovin 11.8.2](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_11_8_2)
+    * TikTok 5.1.0.7
+    * [UnityAds 4.6.1](https://github.com/Unity-Technologies/unity-ads-android/releases/tag/4.6.1)
+    * [Zucks 6.0.0](https://ms.zucksadnetwork.com/media/sdk/manual/android)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 22.0.0
+
 ## v2.15.31 (2023/02/14)
 
 * bundle SDKの更新
