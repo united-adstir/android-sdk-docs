@@ -661,46 +661,10 @@
           
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-4" type="checkbox" id="nav-2-4-4">
-    
-    <label class="md-nav__link" for="nav-2-4-4">
+  <li class="md-nav__item">
+    <a href="../ad/reward/index.html" title="動画リワード" class="md-nav__link">
       動画リワード
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
-      <label class="md-nav__title" for="nav-2-4-4">
-        動画リワード
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ad/reward/index.html" title="実装" class="md-nav__link">
-      実装
     </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ad/reward/callback.html" title="リワードコールバック" class="md-nav__link">
-      リワードコールバック
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
   </li>
 
         
@@ -1070,20 +1034,6 @@
           <li class="md-nav__item">
   <a href="#init" class="md-nav__link">
     init
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setmediauserid" class="md-nav__link">
-    setMediaUserID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getmediauserid" class="md-nav__link">
-    getMediaUserID
   </a>
   
 </li>
@@ -1538,20 +1488,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#setmediauserid" class="md-nav__link">
-    setMediaUserID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getmediauserid" class="md-nav__link">
-    getMediaUserID
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1605,53 +1541,6 @@
 <tr>
 <td>spotNoArray</td>
 <td>動画リワード広告と全画面インタースティシャル広告の枠Noの配列</td>
-</tr>
-</tbody>
-</table>
-<h3 id="setmediauserid"><a class="toclink" href="#setmediauserid">setMediaUserID</a><a class="headerlink" href="#setmediauserid" title="Permanent link">&para;</a></h3>
-<p>インセンティブを付与するユーザーのIDを指定します。<br />
-サーバーサイドで成果通知を受け取る場合は指定が必須となります。<br />
-動画リワード広告を利用しない場合は設定する必要はありません。<br />
-ユーザIDには、ユーザーを一意に識別できるID(半角英数記号)を指定してください。  </p>
-<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">setMediaUserID</span><span class="p">(</span><span class="n">String</span> <span class="n">userId</span><span class="p">)</span>
-</pre></div>
-
-<ul>
-<li>Parameters</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>パラメータ</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>userID</td>
-<td>ユーザID</td>
-</tr>
-</tbody>
-</table>
-<h3 id="getmediauserid"><a class="toclink" href="#getmediauserid">getMediaUserID</a><a class="headerlink" href="#getmediauserid" title="Permanent link">&para;</a></h3>
-<p>インセンティブを付与するユーザーのIDを取得します。</p>
-<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">getMediaUserID</span><span class="p">()</span>
-</pre></div>
-
-<ul>
-<li>Returns</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>戻り値</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>String</td>
-<td>ユーザーID</td>
 </tr>
 </tbody>
 </table>
