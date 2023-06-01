@@ -6,17 +6,7 @@ Android4.4以上
 
 ## 広告の設定
 
-### 1.メディアユーザIDの設定を行う
-サーバーサイドで成果通知を受け取る場合、メディアユーザーIDを設定します。  
-メディアユーザIDの設定は、`動画リワード広告の読み込み`よりも前までに設定する必要があります。
-
-```java
-// サーバーサイドで成果通知を受け取る場合、メディアユーザーIDを設定します。
-// ここでは例として、メールアドレスを指定していますが、任意のID(半角英数記号)が利用可能です。
-AdstirVideoAds.setMediaUserID("xxx@xxx.xx"); 
-```
-
-### 2.動画広告の初期化を行う
+### 1.動画広告の初期化を行う
 
 はじめに、`AdstirVideoAds.init()`を使い、プロジェクトで利用する全ての動画広告の初期化を同時に行います。  
 動画リワード広告と[全画面インタースティシャル広告](../interstitial.md)を併用する場合は、同時に初期化を行う必要があります。
@@ -27,7 +17,7 @@ int[] spotIds = { 1, 2 };
 AdstirVideoAds.init(this, "MEDIA-xxxxxx", spotIds);
 ```
 
-### 3.動画リワード広告のインスタンスを生成
+### 2.動画リワード広告のインスタンスを生成
 
 `AdstirVideoReward`のインスタンスを生成します。
 ```java
@@ -35,7 +25,7 @@ AdstirVideoAds.init(this, "MEDIA-xxxxxx", spotIds);
 AdstirVideoReward adstirVideoReward = new AdstirVideoReward(this, "MEDIA-xxxxxx", 1);
 ```
 
-### 4.リスナーの生成
+### 3.リスナーの生成
 
 動画リワード広告のイベント通知を行うリスナーのインスタンスを生成します。
 
@@ -73,7 +63,7 @@ AdstirVideoRewardListener listener = new AdstirVideoRewardListener() {
 adstirVideoReward.setAdstirVideoRewardListener(listener);
 ```
 
-### 5.動画リワード広告の読み込み
+### 4.動画リワード広告の読み込み
 
 動画リワード広告の読み込みを行います。
 
@@ -82,7 +72,7 @@ adstirVideoReward.setAdstirVideoRewardListener(listener);
 adstirVideoReward.load();
 ```
 
-### 6.動画リワード広告の再生
+### 5.動画リワード広告の再生
 
 読み込みが完了した動画リワード広告を再生します。
 動画の再生後、もう一度動画を再生するためには`5.動画リワード広告の読み込み`を行う必要があります。
@@ -149,9 +139,6 @@ protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.xxxx);
 
-    // サーバーサイドで成果通知を受け取る場合、メディアユーザーIDを設定します。
-    // ここでは例として、メールアドレスを指定していますが、任意のID(半角英数記号)が利用可能です。
-    AdstirVideoAds.setMediaUserID("xxx@xxx.xx"); 
     // 使用する動画リワードと全画面インタースティシャルの全てのスポットIDについて、初期化処理を行います。
     int[] spotIds = { 1, 2 };
     AdstirVideoAds.init(this, "MEDIA-xxxxxx", spotIds);
@@ -205,10 +192,3 @@ protected void onDestroy() {
 
 [APIリファレンス](../../api/index.md#動画リワード広告)をご覧ください。
 
-## 成果のコールバックURLへの通知
-
-adstirでは、インセンティブ付与の通知を、任意のコールバックURLに行うことが可能です。
-付与するインセンティブの単位と額は、任意の値に変更可能です。
-`AdstirVideoAds.setMediaUserID("xxx@xxx.xx");` でユーザーIDを設定していない場合には通知されませんので、ご注意ください。
-
-[動画インセンティブ付与をコールバックURLに通知する](callback.md)

@@ -39,24 +39,6 @@ public static void init(Activity activity, String mediaId, int[] spotNoArray)
 |mediaId|メディアID|
 |spotNoArray|枠Noの配列|
 
-### setMediaUserID
-
-!!! warning "Deprecated"
-    このメソッドの代わりに[こちら](../AdstirVideoAds-Class-Reference.md#setmediauserid)をご利用ください
-
-インセンティブを付与するユーザーのIDを指定します。
-サーバーサイドで成果通知を受け取る場合は指定が必須となります。
-ユーザIDには、ユーザーを一意に識別できるID(半角英数記号)を指定してください。
-
-```java
-public static void setMediaUserID(String userId)
-```
-
-* Parameters
-
-|パラメータ||
-|---|---|
-|userID|ユーザID|
 
 ## Instance Methods
 

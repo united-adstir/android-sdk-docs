@@ -80,9 +80,7 @@ nav:
           - ネイティブライクバナー: adstir/ad/native/native_banner.md
           - フルカスタマイズ: adstir/ad/native/custom.md
           - ネイティブ動画: adstir/ad/native/native_video.md
-        - 動画リワード:
-          - 実装: adstir/ad/reward/index.md
-          - リワードコールバック: adstir/ad/reward/callback.md
+        - 動画リワード: adstir/ad/reward/index.md
         - 全画面インタースティシャル: adstir/ad/interstitial.md
       - APIリファレンス:
         - 一覧: adstir/api/index.md
