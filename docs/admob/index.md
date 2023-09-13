@@ -4,7 +4,7 @@
 
 - Android Studio 3.2以上
 - minSdkVersion 19以上
-- compileSdkVersion 28以上
+- compileSdkVersion 33以上
 - AndroidX 必須
 
 !!! Info
@@ -23,7 +23,7 @@ AdMobアダプタはGoogle Mobile Ads SDK version {{ version.google }}でビル�
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="13 17"
+```groovy hl_lines="12 16"
 repositories {
     google()
     mavenCentral()
@@ -32,7 +32,6 @@ repositories {
     maven { url 'https://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
     maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
     maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // zucks
-    maven { url "https://sdk.tapjoy.com/" } // Tapjoy
     maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
 }
 
@@ -52,7 +51,6 @@ dependencies {
     * [AppLovin](https://dl.google.com/android/maven2/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
     * [maio](https://dl.google.com/android/maven2/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
     * [nend](https://dl.google.com/android/maven2/com/google/ads/mediation/nend/{{version.nend}}.0/nend-{{version.nend}}.0.aar)
-    * [Tapjoy](https://dl.google.com/android/maven2/com/google/ads/mediation/tapjoy/{{version.tapjoy}}.0/tapjoy-{{version.tapjoy}}.0.aar)
     * [UnityAds](https://dl.google.com/android/maven2/com/google/ads/mediation/unity/{{version.unityads}}.0/unity-{{version.unityads}}.0.aar)
 1. ダウンロードした各SDKをプロジェクトへ追加する
 

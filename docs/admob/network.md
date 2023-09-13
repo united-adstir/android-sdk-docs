@@ -8,5 +8,4 @@ adstirのAdMobパッケージには下記のアドネットワークのSDKがパ
 AdColony|{{ version.adcolony }}| o | o | o | o | - | -
 AppLovin|{{ version.applovin }}| o | o | o | o | o | -
 nend    |{{ version.nend     }}| o | o | o | o | - | -
-Tapjoy  |{{ version.tapjoy   }}| - | o | o | o | - | -
 UnityAds|{{ version.unityads }}| o | o | o | o | - | -

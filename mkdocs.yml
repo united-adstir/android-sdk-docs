@@ -18,17 +18,16 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.15.32
+    adstir: 2.15.33
     adcolony: 4.8.0
-    applovin: 11.8.2
-    imobile: 2.3.0
+    applovin: 11.11.3
+    imobile: 2.3.1
     maio: 1.1.16
-    nend: 9.0.0
-    tapjoy: 12.11.1
+    nend: 9.0.1
     tiktok: 5.1.0.7
-    unityads: 4.6.1
+    unityads: 4.8.0
     zucks: 6.0.0
-    google: 22.0.0
+    google: 22.3.0
   sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.15.22-SampleApp.zip'
 
 # CSSの設定
@@ -66,7 +65,6 @@ nav:
         - imobile: adstir/network/imobile.md
         - maio: adstir/network/maio.md
         - nend: adstir/network/nend.md
-        - TapJoy: adstir/network/tapjoy.md
         - TikTok: adstir/network/tiktok.md
         - UnityAds: adstir/network/unityads.md
         - Zucks: adstir/network/zucks.md

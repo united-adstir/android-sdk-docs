@@ -22,7 +22,7 @@ Google Mobile Ads SDKは20.0.0以上をお使いください。
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="13 28"
+```groovy hl_lines="12 26"
 repositories {
     google()
     mavenCentral()
@@ -31,7 +31,6 @@ repositories {
     maven { url 'https://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
     maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
     maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // zucks
-    maven { url "https://sdk.tapjoy.com/" } // Tapjoy
     maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
 }
 
@@ -46,7 +45,6 @@ dependencies {
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-maio:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-unityads:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-nend:${adstir_version}")
-    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-tapjoy:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-tiktok:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-adcolony:${adstir_version}")
 }

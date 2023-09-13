@@ -4,7 +4,7 @@
 
 * Android Studio 3.2以上
 * minSdkVersion 19以上
-* compileSdkVersion 28以上
+* compileSdkVersion 33以上
 * AndroidX 必須
 
 ## 事前準備

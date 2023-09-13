@@ -1,5 +1,17 @@
 # 変更履歴
 
+## v2.15.33 (2023/09/13)
+
+* adstir SDKのcompileSdkVersion/targetSdkVersionを33に変更
+* TapJoy SDKのバンドル終了
+* bundle SDKの更新
+    * [AppLovin 11.11.3](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_11_11_3)
+    * IMobile 2.3.1
+    * [Nend 9.0.1](https://github.com/fan-ADN/nendSDK-Android-pub/releases/tag/9.0.1)
+    * [UnityAds 4.8.0](https://github.com/Unity-Technologies/unity-ads-android/releases/tag/4.8.0)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 22.3.0
+
 ## v2.15.32 (2023/04/11)
 
 * bundle SDKの更新

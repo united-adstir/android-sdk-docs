@@ -27,7 +27,7 @@ dependencies {
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。
 
-```groovy hl_lines="13 17"
+```groovy hl_lines="12 16"
 repositories {
     google()
     mavenCentral()
@@ -36,7 +36,6 @@ repositories {
     maven { url 'https://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
     maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
     maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // zucks
-    maven { url "https://sdk.tapjoy.com/" } // Tapjoy
     maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
 }
 

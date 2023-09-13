@@ -25,10 +25,6 @@
 
 * [nendSDK データ収集項目](https://github.com/fan-ADN/nendSDK-Android/wiki/nendSDK-データ収集項目)
 
-## TapJoy
-
-* [Tapjoyにどのような情報が送信されますか?](https://dev.tapjoy.com/jp/support/Info-sent-to-Tapjoy?fbclid=IwAR2ZAk_PQNmNb6KpRhkAxZCr-umvTOUkEwN9JgsDK85kpqdbRe57KWsy57w)
-
 ## TikTok
 
 * [App privacy details on the Google Play JP | Pangle](https://www.pangleglobal.com/jp/integration/app-privacy-details-gp)
