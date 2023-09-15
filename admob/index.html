@@ -468,18 +468,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../adstir/network/tapjoy.html" title="TapJoy" class="md-nav__link">
-      TapJoy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../adstir/network/tiktok.html" title="TikTok" class="md-nav__link">
       TikTok
     </a>
@@ -1605,7 +1593,7 @@
 <ul>
 <li>Android Studio 3.2以上</li>
 <li>minSdkVersion 19以上</li>
-<li>compileSdkVersion 28以上</li>
+<li>compileSdkVersion 33以上</li>
 <li>AndroidX 必須</li>
 </ul>
 <div class="admonition info">
@@ -1614,7 +1602,7 @@
 </div>
 <h2 id="事前準備"><a class="toclink" href="#事前準備">事前準備</a><a class="headerlink" href="#事前準備" title="Permanent link">&para;</a></h2>
 <p><a href="https://developers.google.com/admob/android/quick-start?hl=ja">AdMobのスタートガイド</a>を参考に、AdMobの設定をおこなってください。
-AdMobアダプタはGoogle Mobile Ads SDK version 22.0.0でビルドおよびテストを行なっています。</p>
+AdMobアダプタはGoogle Mobile Ads SDK version 22.3.0でビルドおよびテストを行なっています。</p>
 <h3 id="メディエーションの準備"><a class="toclink" href="#メディエーションの準備">メディエーションの準備</a><a class="headerlink" href="#メディエーションの準備" title="Permanent link">&para;</a></h3>
 <p><a href="https://developers.google.com/admob/android/mediate?hl=ja">AdMobメディエーション</a>を行うために、アドネットワークのSDKとアダプターをプロジェクトへ導入します。</p>
 <h4 id="android-studioで導入する場合"><a class="toclink" href="#android-studioで導入する場合">Android Studioで導入する場合</a><a class="headerlink" href="#android-studioで導入する場合" title="Permanent link">&para;</a></h4>
@@ -1627,13 +1615,12 @@ AdMobアダプタはGoogle Mobile Ads SDK version 22.0.0でビルドおよびテ
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://fan-adn.github.io/nendSDK-Android-lib/library&#39;</span> <span class="o">}</span> <span class="c1">// nend</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s2">&quot;https://imobile.github.io/adnw-sdk-android&quot;</span> <span class="o">}</span> <span class="c1">// imobile</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/&#39;</span> <span class="o">}</span> <span class="c1">// zucks</span>
-    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s2">&quot;https://sdk.tapjoy.com/&quot;</span> <span class="o">}</span> <span class="c1">// Tapjoy</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://artifact.bytedance.com/repository/pangle&#39;</span> <span class="o">}</span> <span class="c1">// TikTok</span>
 <span class="o">}</span>
 
 <span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
 </span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.32&quot;</span>
+    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.15.33&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:admob-package:${adstir_version}&quot;</span>
 <span class="hll"><span class="o">}</span>
 </span></pre></div>
@@ -1644,11 +1631,10 @@ AdMobアダプタはGoogle Mobile Ads SDK version 22.0.0でビルドおよびテ
 <li><a href="https://developers.google.com/admob/android/quick-start?hl=ja#manual_download">AdMobのスタートガイド</a>を参考にGoogleMobileAds SDKを入れる</li>
 <li>AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードする<ul>
 <li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/adcolony/4.8.0.0/adcolony-4.8.0.0.aar">AdColony</a></li>
-<li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/applovin/11.8.2.0/applovin-11.8.2.0.aar">AppLovin</a></li>
+<li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/applovin/11.11.3.0/applovin-11.11.3.0.aar">AppLovin</a></li>
 <li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/maio/1.1.16.0/maio-1.1.16.0.aar">maio</a></li>
-<li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/nend/9.0.0.0/nend-9.0.0.0.aar">nend</a></li>
-<li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/tapjoy/12.11.1.0/tapjoy-12.11.1.0.aar">Tapjoy</a></li>
-<li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/unity/4.6.1.0/unity-4.6.1.0.aar">UnityAds</a></li>
+<li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/nend/9.0.1.0/nend-9.0.1.0.aar">nend</a></li>
+<li><a href="https://dl.google.com/android/maven2/com/google/ads/mediation/unity/4.8.0.0/unity-4.8.0.0.aar">UnityAds</a></li>
 </ul>
 </li>
 <li>ダウンロードした各SDKをプロジェクトへ追加する</li>
