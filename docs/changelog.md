@@ -1,5 +1,11 @@
 # 変更履歴
 
+## v2.15.34 (2023/10/02)
+
+* bundle SDKの更新
+    * TikTok 5.5.0.4
+        * Android 14のサポートが含まれております
+
 ## v2.15.33 (2023/09/13)
 
 * adstir SDKのcompileSdkVersion/targetSdkVersionを33に変更
