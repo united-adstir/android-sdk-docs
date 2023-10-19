@@ -1,5 +1,15 @@
 # 変更履歴
 
+## v2.15.35 (2023/10/19)
+
+* bundle SDKの更新
+    * [Nend 10.0.0](https://github.com/fan-ADN/nendSDK-Android-pub/releases/tag/10.0.0)
+        * Android 14への対応が含まれております
+        * AdMobパッケージにはNendのAdMob用アダプターは含まれておりません
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 22.4.0
+        * Android Gradle プラグイン 4.2.0以上が必要です
+
 ## v2.15.34 (2023/10/02)
 
 * bundle SDKの更新

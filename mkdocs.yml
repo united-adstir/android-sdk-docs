@@ -23,11 +23,11 @@ extra:
     applovin: 11.11.3
     imobile: 2.3.1
     maio: 1.1.16
-    nend: 9.0.1
+    nend: 10.0.0
     tiktok: 5.5.0.4
     unityads: 4.8.0
     zucks: 6.0.0
-    google: 22.3.0
+    google: 22.4.0
   sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.15.22-SampleApp.zip'
 
 # CSSの設定
