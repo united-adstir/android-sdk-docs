@@ -1,5 +1,14 @@
 # 変更履歴
 
+## v2.15.36 (2023/12/01)
+
+* bundle SDKの更新
+    * TikTok 5.6.0.1
+    * [UnityAds 4.9.1](https://docs.unity.com/ads/en-us/manual/Changelog#Version_4.9.1_-_released_2023-10-13)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 22.5.0
+
+
 ## v2.15.35 (2023/10/19)
 
 * bundle SDKの更新
