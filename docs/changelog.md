@@ -1,5 +1,11 @@
 # 変更履歴
 
+## v2.15.37 (2023/12/19)
+
+* AppLovin Maxアダプタのリワード/インタースティシャル広告の安定性向上
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 22.5.0
+
 ## v2.15.36 (2023/12/01)
 
 * bundle SDKの更新
