@@ -23,13 +23,12 @@ AdMobアダプタはGoogle Mobile Ads SDK version {{ version.google }}でビル�
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="12 16"
+```groovy hl_lines="11 15"
 repositories {
     google()
     mavenCentral()
     maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url "https://imobile-maio.github.io/maven" } // maio
-    maven { url 'https://fan-adn.github.io/nendSDK-Android-lib/library' } // nend
     maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
     maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // zucks
     maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
@@ -47,10 +46,8 @@ dependencies {
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込む
 1. [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを入れる
 1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードする
-    * [AdColony](https://dl.google.com/android/maven2/com/google/ads/mediation/adcolony/{{version.adcolony}}.0/adcolony-{{version.adcolony}}.0.aar)
     * [AppLovin](https://dl.google.com/android/maven2/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
     * [maio](https://dl.google.com/android/maven2/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
-    * [nend](https://dl.google.com/android/maven2/com/google/ads/mediation/nend/{{version.nend}}.0/nend-{{version.nend}}.0.aar)
     * [UnityAds](https://dl.google.com/android/maven2/com/google/ads/mediation/unity/{{version.unityads}}.0/unity-{{version.unityads}}.0.aar)
 1. ダウンロードした各SDKをプロジェクトへ追加する
 
