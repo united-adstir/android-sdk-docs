@@ -1,5 +1,11 @@
 # 変更履歴
 
+## v2.15.38 (2024/01/18)
+
+* Android 14対応
+* [AdColony SDK](https://www.digitalturbine.com/blog/mobile-monetization/dt-exchange-x-adcolony-merge-is-now-complete/)のバンドル終了
+* [Nend SDK](https://github.com/fan-ADN/nendSDK-Android-pub?tab=readme-ov-file#nend%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E7%B5%82%E4%BA%86%E3%81%AB%E4%BC%B4%E3%81%86nendsdk%E3%81%AE%E5%89%8A%E9%99%A4%E3%81%AE%E3%81%8A%E9%A1%98%E3%81%84)のバンドル終了
+
 ## v2.15.37 (2023/12/19)
 
 * AppLovin Maxアダプタのリワード/インタースティシャル広告の安定性向上
