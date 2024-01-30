@@ -18,7 +18,7 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.15.38
+    adstir: 2.15.39
     applovin: 11.11.3
     imobile: 2.3.1
     maio: 1.1.16
