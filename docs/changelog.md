@@ -1,5 +1,15 @@
 # 変更履歴
 
+## v2.16.0 (2024/02/19)
+
+* adstir SDKのcompileSdkVersion/targetSdkVersionを34に変更
+* 動画リワード広告、全画面インタースティシャル広告で利用する動画プレイヤーを改良
+* bundle SDKの更新
+    * TikTok 5.7.0.3
+    * Zucks 6.0.1
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 22.6.0
+
 ## v2.15.39 (2024/01/29)
 
 * SDKの安定性向上
