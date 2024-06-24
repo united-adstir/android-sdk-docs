@@ -1,5 +1,9 @@
 # 変更履歴
 
+## v2.16.1 (2024/06/24)
+
+* SDKの安定性向上
+
 ## v2.16.0 (2024/02/19)
 
 * adstir SDKのcompileSdkVersion/targetSdkVersionを34に変更
