@@ -4,8 +4,6 @@ adstir SDKのみをご利用される場合は[こちら](adstir/index.md)をご
 
 AdMobをご利用される場合は[こちら](admob/index.md)をご覧ください。
 
-AdMob + APSをご利用される場合は[こちら](aps/init.md)をご覧ください。
-
 AdManagerをご利用される場合は[こちら](admanager/index.md)をご覧ください。
 
 AppLovin MAXをご利用される場合は[こちら](max/index.md)をご覧ください。

@@ -1,5 +1,19 @@
 # 変更履歴
 
+## v2.16.2 (2024/07/23)
+
+* Android OSの最小サポートバージョンを5.0(APIレベル21)に変更
+* admob-packageの廃止
+    * AdMobアダプタは引き続きご利用いただけます
+* AdMobネイティブアダプタの安定性向上
+* bundle SDKの更新
+    * [AppLovin 12.5.0](https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_12_5_0)
+    * IMobile 2.3.2
+    * TikTok 6.1.0.5
+    * [UnityAds 4.12.1](https://docs.unity.com/ads/en-us/manual/Changelog#Version_4.12.1_-_released_2024-07-04)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 23.2.0
+
 ## v2.16.1 (2024/06/24)
 
 * SDKの安定性向上
