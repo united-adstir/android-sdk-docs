@@ -3,8 +3,8 @@
 ## 前提条件
 
 - Android Studio 3.2以上
-- minSdkVersion 19以上
-- compileSdkVersion 33以上
+- minSdkVersion 21以上
+- compileSdkVersion 34以上
 - AndroidX 必須
 
 !!! Info
@@ -23,21 +23,27 @@ AdMobアダプタはGoogle Mobile Ads SDK version {{ version.google }}でビル�
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="11 15"
+```groovy hl_lines="10 21"
 repositories {
     google()
     mavenCentral()
     maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url "https://imobile-maio.github.io/maven" } // maio
     maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
-    maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // zucks
     maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
 }
 
 dependencies {
     // 利用するadstirのSDKバージョンを設定します
     def adstir_version = "{{version.adstir}}"
-    implementation "com.ad-stir.mediationadapter:admob-package:${adstir_version}"
+    implementation "com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}"
+    implementation "com.ad-stir.mediationadapter:adstir-admob-mediation-adapter:${adstir_version}"
+
+    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-applovin:${adstir_version}")
+    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-imobile:${adstir_version}")
+    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-maio:${adstir_version}")
+    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-unityads:${adstir_version}")
+    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-tiktok:${adstir_version}")
 }
 ```
 
@@ -45,11 +51,6 @@ dependencies {
 
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込む
 1. [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを入れる
-1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードする
-    * [AppLovin](https://dl.google.com/android/maven2/com/google/ads/mediation/applovin/{{version.applovin}}.0/applovin-{{version.applovin}}.0.aar)
-    * [maio](https://dl.google.com/android/maven2/com/google/ads/mediation/maio/{{version.maio}}.0/maio-{{version.maio}}.0.aar)
-    * [UnityAds](https://dl.google.com/android/maven2/com/google/ads/mediation/unity/{{version.unityads}}.0/unity-{{version.unityads}}.0.aar)
-1. ダウンロードした各SDKをプロジェクトへ追加する
 
 ## 広告の実装
 

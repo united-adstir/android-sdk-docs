@@ -4,7 +4,7 @@
 
 ## 対応OS
 
-Android 4.4以上
+Android 5.0以上
 
 ## 利用上の注意
 

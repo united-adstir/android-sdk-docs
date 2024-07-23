@@ -3,8 +3,8 @@
 ## 前提条件
 
 - Android Studio 3.2以上
-- minSdkVersion 19以上
-- compileSdkVersion 28以上
+- minSdkVersion 21以上
+- compileSdkVersion 34以上
 - AndroidX 必須
 
 ## 事前準備
@@ -22,14 +22,13 @@ Google Mobile Ads SDKは20.0.0以上をお使いください。
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="11 22"
+```groovy hl_lines="10 21"
 repositories {
     google()
     mavenCentral()
     maven { url 'https://cdnp.ad-stir.com/m2' }
     maven { url "https://imobile-maio.github.io/maven" } // maio
     maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
-    maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // zucks
     maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
 }
 

@@ -29,7 +29,3 @@
 ## AdMob/AdManagerをご利用の方
 
 * [Google Play のデータ開示要件に備える](https://developers.google.com/admob/android/play-data-disclosure)
-
-## APSをご利用の方
-
-記載内容につきましては営業担当にお問い合わせください。
