@@ -197,19 +197,6 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../aps/init.html" class="md-tabs__link">
-          APS
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
         <a href="../../admanager/index.html" class="md-tabs__link">
           AdManager
         </a>
@@ -1251,18 +1238,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../admob/network.html" title="AdMobメディエーション" class="md-nav__link">
-      AdMobメディエーション
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../admob/setting.html" title="AdMob配信設定" class="md-nav__link">
       AdMob配信設定
     </a>
@@ -1296,70 +1271,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      APS
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        APS
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../aps/init.html" title="APSの初期設定" class="md-nav__link">
-      APSの初期設定
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../aps/banner.html" title="AdMobバナー" class="md-nav__link">
-      AdMobバナー
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../aps/interstitial.html" title="AdMobインタースティシャル" class="md-nav__link">
-      AdMobインタースティシャル
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
       AdManager
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         AdManager
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1389,13 +1304,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       MAX
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         MAX
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1510,7 +1425,7 @@
 
 <span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
 </span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.16.1&quot;</span>
+    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.16.2&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}&quot;</span>
 <span class="hll"><span class="o">}</span>
 </span></pre></div>
@@ -1527,13 +1442,12 @@
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://cdnp.ad-stir.com/m2&#39;</span> <span class="o">}</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s2">&quot;https://imobile-maio.github.io/maven&quot;</span> <span class="o">}</span> <span class="c1">// maio</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s2">&quot;https://imobile.github.io/adnw-sdk-android&quot;</span> <span class="o">}</span> <span class="c1">// imobile</span>
-    <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/&#39;</span> <span class="o">}</span> <span class="c1">// zucks</span>
     <span class="n">maven</span> <span class="o">{</span> <span class="n">url</span> <span class="s1">&#39;https://artifact.bytedance.com/repository/pangle&#39;</span> <span class="o">}</span> <span class="c1">// TikTok</span>
 <span class="o">}</span>
 
 <span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
 </span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.16.1&quot;</span>
+    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.16.2&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:adstir-mediationadapter:${adstir_version}&quot;</span>
 <span class="hll"><span class="o">}</span>
 </span></pre></div>

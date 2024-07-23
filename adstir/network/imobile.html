@@ -197,19 +197,6 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../aps/init.html" class="md-tabs__link">
-          APS
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
         <a href="../../admanager/index.html" class="md-tabs__link">
           AdManager
         </a>
@@ -1270,18 +1257,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../admob/network.html" title="AdMobメディエーション" class="md-nav__link">
-      AdMobメディエーション
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../admob/setting.html" title="AdMob配信設定" class="md-nav__link">
       AdMob配信設定
     </a>
@@ -1315,70 +1290,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      APS
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        APS
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../aps/init.html" title="APSの初期設定" class="md-nav__link">
-      APSの初期設定
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../aps/banner.html" title="AdMobバナー" class="md-nav__link">
-      AdMobバナー
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../aps/interstitial.html" title="AdMobインタースティシャル" class="md-nav__link">
-      AdMobインタースティシャル
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
       AdManager
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         AdManager
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1408,13 +1323,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       MAX
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         MAX
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1542,7 +1457,7 @@
                 
                 <h1 id="imobile広告の導入"><a class="toclink" href="#imobile広告の導入">imobile広告の導入</a><a class="headerlink" href="#imobile広告の導入" title="Permanent link">&para;</a></h1>
 <h2 id="対応os"><a class="toclink" href="#対応os">対応OS</a><a class="headerlink" href="#対応os" title="Permanent link">&para;</a></h2>
-<p>Android 4.4以上</p>
+<p>Android 5.0以上</p>
 <h2 id="sdkの組み込み"><a class="toclink" href="#sdkの組み込み">SDKの組み込み</a><a class="headerlink" href="#sdkの組み込み" title="Permanent link">&para;</a></h2>
 <h3 id="android-studioによる組み込み推奨"><a class="toclink" href="#android-studioによる組み込み推奨">Android Studioによる組み込み(推奨)</a><a class="headerlink" href="#android-studioによる組み込み推奨" title="Permanent link">&para;</a></h3>
 <p>アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。</p>
@@ -1554,7 +1469,7 @@
 
 <span class="hll"><span class="n">dependencies</span> <span class="o">{</span>
 </span>    <span class="c1">// 利用するadstirのSDKバージョンを設定します</span>
-    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.16.1&quot;</span>
+    <span class="kt">def</span> <span class="n">adstir_version</span> <span class="o">=</span> <span class="s2">&quot;2.16.2&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.webviewsdk:adstir-webviewsdk:${adstir_version}&quot;</span>
     <span class="n">implementation</span> <span class="s2">&quot;com.ad-stir.mediationadapter:adstir-mediationadapter-imobile:${adstir_version}&quot;</span>
 <span class="hll"><span class="o">}</span>

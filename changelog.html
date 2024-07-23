@@ -195,19 +195,6 @@
   
     <li class="md-tabs__item">
       
-        <a href="aps/init.html" class="md-tabs__link">
-          APS
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
         <a href="admanager/index.html" class="md-tabs__link">
           AdManager
         </a>
@@ -1179,18 +1166,6 @@
 
 
   <li class="md-nav__item">
-    <a href="admob/network.html" title="AdMobメディエーション" class="md-nav__link">
-      AdMobメディエーション
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="admob/setting.html" title="AdMob配信設定" class="md-nav__link">
       AdMob配信設定
     </a>
@@ -1224,70 +1199,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      APS
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        APS
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="aps/init.html" title="APSの初期設定" class="md-nav__link">
-      APSの初期設定
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="aps/banner.html" title="AdMobバナー" class="md-nav__link">
-      AdMobバナー
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="aps/interstitial.html" title="AdMobインタースティシャル" class="md-nav__link">
-      AdMobインタースティシャル
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
       AdManager
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         AdManager
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1317,13 +1232,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       MAX
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         MAX
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1377,6 +1292,13 @@
   
     <label class="md-nav__title" for="__toc">目次</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v2162-20240723" class="md-nav__link">
+    v2.16.2 (2024/07/23)
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#v2161-20240624" class="md-nav__link">
@@ -1704,6 +1626,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v2162-20240723" class="md-nav__link">
+    v2.16.2 (2024/07/23)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v2161-20240624" class="md-nav__link">
     v2.16.1 (2024/06/24)
   </a>
@@ -2015,6 +1944,26 @@
                 
                 
                 <h1 id="変更履歴"><a class="toclink" href="#変更履歴">変更履歴</a><a class="headerlink" href="#変更履歴" title="Permanent link">&para;</a></h1>
+<h2 id="v2162-20240723"><a class="toclink" href="#v2162-20240723">v2.16.2 (2024/07/23)</a><a class="headerlink" href="#v2162-20240723" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Android OSの最小サポートバージョンを5.0(APIレベル21)に変更</li>
+<li>admob-packageの廃止<ul>
+<li>AdMobアダプタは引き続きご利用いただけます</li>
+</ul>
+</li>
+<li>AdMobネイティブアダプタの安定性向上</li>
+<li>bundle SDKの更新<ul>
+<li><a href="https://github.com/AppLovin/AppLovin-MAX-SDK-Android/releases/tag/release_12_5_0">AppLovin 12.5.0</a></li>
+<li>IMobile 2.3.2</li>
+<li>TikTok 6.1.0.5</li>
+<li><a href="https://docs.unity.com/ads/en-us/manual/Changelog#Version_4.12.1_-_released_2024-07-04">UnityAds 4.12.1</a></li>
+</ul>
+</li>
+<li>AdMobアダプタ ビルド・テスト<ul>
+<li>Google Mobile Ads SDK version 23.2.0</li>
+</ul>
+</li>
+</ul>
 <h2 id="v2161-20240624"><a class="toclink" href="#v2161-20240624">v2.16.1 (2024/06/24)</a><a class="headerlink" href="#v2161-20240624" title="Permanent link">&para;</a></h2>
 <ul>
 <li>SDKの安定性向上</li>
