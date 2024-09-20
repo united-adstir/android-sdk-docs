@@ -21,12 +21,6 @@ adstir SDKのAPIリファレンスです。
 * [AdstirLoadImageListener](native/AdstirLoadImageListener-Interface-Reference.md)
 * [AdstirLoadIconListener](native/AdstirLoadIconListener-Interface-Reference.md)
 
-### ネイティブ動画広告
-
-* [AdstirNativeVideoAd](native/video/AdstirNativeVideoAd-Class-Reference.md)
-* [AdstirNativeVideoView](native/video/AdstirNativeVideoView-Class-Reference.md)
-* [AdstirNativeVideoListener](native/video/AdstirNativeVideoListener-Interface-Reference.md)
-
 ## 動画リワード広告及び全画面インタースティシャル広告の初期化
 
 * [AdstirVideoAds](AdstirVideoAds-Class-Reference.md)

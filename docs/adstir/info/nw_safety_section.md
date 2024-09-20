@@ -10,6 +10,11 @@
 
 * [収集しているデータについて](https://sppartner.i-mobile.co.jp/webdoc/index.html#android/collected-data.html)
 
+
+## ironSource
+
+* [Google’s Data Safety Questionnaire](https://developers.is.com/ironsource-mobile/general/googles-data-safety-questionnaire-full/)
+
 ## Maio
 
 * [収集しているデータについて](https://github.com/imobile-maio/maio-Android-SDK#%E5%8F%8E%E9%9B%86%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
