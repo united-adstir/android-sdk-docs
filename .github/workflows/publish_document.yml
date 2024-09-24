@@ -15,7 +15,7 @@ jobs:
       - name: build document
         env:
           GITHUB_ACTIONS: true
-        run: docker-compose up
+        run: docker compose up
 
       - name: Prepare tag
         id: prepare_tag
