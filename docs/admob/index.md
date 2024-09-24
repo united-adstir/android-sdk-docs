@@ -23,13 +23,14 @@ AdMobアダプタはGoogle Mobile Ads SDK version {{ version.google }}でビル�
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
-```groovy hl_lines="10 21"
+```groovy hl_lines="11 23"
 repositories {
     google()
     mavenCentral()
     maven { url 'https://cdnp.ad-stir.com/m2' }
-    maven { url "https://imobile-maio.github.io/maven" } // maio
-    maven { url "https://imobile.github.io/adnw-sdk-android" } // imobile
+    maven { url 'https://imobile-maio.github.io/maven' } // maio
+    maven { url 'https://imobile.github.io/adnw-sdk-android'} // imobile
+    maven { url 'https://android-sdk.is.com/'} // ironSource
     maven { url 'https://artifact.bytedance.com/repository/pangle' } // TikTok
 }
 
@@ -41,6 +42,7 @@ dependencies {
 
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-applovin:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-imobile:${adstir_version}")
+    implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-ironsource:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-maio:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-unityads:${adstir_version}")
     implementation("com.ad-stir.mediationadapter:adstir-mediationadapter-tiktok:${adstir_version}")
@@ -49,8 +51,9 @@ dependencies {
 
 #### 手動で導入する場合
 
-1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込む
-1. [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを入れる
+1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込みます
+    * バナー広告のみをご利用される場合は営業担当までお問い合わせください
+1. [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを入れます
 
 ## 広告の実装
 

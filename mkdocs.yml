@@ -18,9 +18,10 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.16.2
+    adstir: 2.16.3
     applovin: 12.5.0
     imobile: 2.3.2
+    ironsource: 8.1.2
     maio: 1.1.16
     tiktok: 6.1.0.5
     unityads: 4.12.1
@@ -60,6 +61,7 @@ nav:
         - 対応ネットワーク一覧: adstir/network/index.md
         - AppLovin: adstir/network/applovin.md
         - imobile: adstir/network/imobile.md
+        - ironSource: adstir/network/ironsource.md
         - maio: adstir/network/maio.md
         - TikTok: adstir/network/tiktok.md
         - UnityAds: adstir/network/unityads.md
@@ -73,7 +75,6 @@ nav:
         - ネイティブ:
           - ネイティブライクバナー: adstir/ad/native/native_banner.md
           - フルカスタマイズ: adstir/ad/native/custom.md
-          - ネイティブ動画: adstir/ad/native/native_video.md
         - 動画リワード: adstir/ad/reward/index.md
         - 全画面インタースティシャル: adstir/ad/interstitial.md
       - APIリファレンス:
@@ -91,10 +92,6 @@ nav:
           - AdstirNativeAdResponse: adstir/api/native/AdstirNativeAdResponse-Class-Reference.md
           - AdstirLoadImageListener: adstir/api/native/AdstirLoadImageListener-Interface-Reference.md
           - AdstirLoadIconListener: adstir/api/native/AdstirLoadIconListener-Interface-Reference.md
-          - ネイティブ動画:
-            - AdstirNativeVideoAd: adstir/api/native/video/AdstirNativeVideoAd-Class-Reference.md
-            - AdstirNativeVideoView: adstir/api/native/video/AdstirNativeVideoView-Class-Reference.md
-            - AdstirNativeVideoListener: adstir/api/native/video/AdstirNativeVideoListener-Interface-Reference.md
         - 動画リワード/全画面インタースティシャルの初期化:
           - AdstirVideoAds: adstir/api/AdstirVideoAds-Class-Reference.md
         - 動画リワード:
