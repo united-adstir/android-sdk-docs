@@ -34,11 +34,4 @@ maioのSDKは、VideoAdSDKBundledのパッケージに同梱されておりま�
 
 1. File -> New -> New Module -> Import .JAR/.AAR Package より`unity-ads.aar`, `adstir-mediationadapter-adapter-unityads.aar`を追加します。
 2. File -> Project Structure -> Dependencies -> app より`unity-ads`, `adstir-mediationadapter-adapter-unityads`を追加します。
-3. アプリケーションレベルのbuild.gradleに依存関係を設定します。
-
-```groovy hl_lines="1 4"
-dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.32'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3'
-}
-```
+3. アプリケーションレベルのbuild.gradleに依存関係を設定します。[こちら](https://mvnrepository.com/artifact/com.unity3d.ads/unity-ads/{{version.unityads}})のページのCompile Dependenciesより使用していないライブラリを導入してください。
