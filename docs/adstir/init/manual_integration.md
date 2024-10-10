@@ -32,3 +32,14 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads-identifier:x.x.x'
 }
 ```
+
+## androidx.activityの追加
+本SDKでは、[androidx.activity](https://developer.android.com/jetpack/androidx/releases/activity)の機能を使用しています。  
+アプリケーションレベルのbuild.gradleに依存関係を設定します。
+`androidx.activity`のバージョンは1.4.0以降をご利用ください。
+
+```groovy hl_lines="1 3"
+dependencies {
+    implementation "androidx.activity:activity:x.x.x"
+}
+```

@@ -18,12 +18,12 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.16.3
+    adstir: 2.16.4
     applovin: 12.5.0
     imobile: 2.3.2
     ironsource: 8.1.2
     maio: 1.1.16
-    tiktok: 6.1.0.5
+    tiktok: 6.2.0.7
     unityads: 4.12.1
     zucks: 6.0.1
     google: 23.2.0
