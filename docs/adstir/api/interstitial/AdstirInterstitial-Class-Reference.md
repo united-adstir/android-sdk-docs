@@ -94,6 +94,13 @@ public void setLocation(Location location)
 public void load()
 ```
 
+### canShow
+動画広告の再生可否を判定します。
+
+```java
+public boolean canShow()
+```
+
 ### show
 
 ビデオの再生を開始します。
