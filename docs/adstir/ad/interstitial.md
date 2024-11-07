@@ -13,16 +13,16 @@ Android 5.0以上
 はじめ、`AdstirVideoAds.init()`を使い、プロジェクトで利用する全ての動画広告の初期化を同時に行います。　　[動画リワード広告](reward/index.md)と全画面インタースティシャル広告を併用する場合は、同時に初期化を行う必要があります。
 
 ```java
-// 使用する動画リワードと全画面インタースティシャルの全てのスポットIDについて、初期化処理を行います。
-int[] spotIds = { 1, 2 };
-AdstirVideoAds.init(this, "MEDIA-xxxxxx", spotIds);
+// 使用する動画リワードと全画面インタースティシャルの全ての枠Noについて、初期化処理を行います。
+int[] spotNos = { 1, 2 };
+AdstirVideoAds.init(this, "MEDIA-xxxxxx", spotNos);
 ```
 
 ### 2.全画面インタースティシャル広告のインスタンスを生成
 
 `AdstirInterstitial`のインスタンスを生成します。
 ```java
-// スポットIDごとにインスタンスを生成します。ここでは1についてのみ生成します。
+// 枠Noごとにインスタンスを生成します。ここでは2についてのみ生成します。
 AdstirInterstitial adstirInterstitial = new AdstirInterstitial(this, "MEDIA-xxxxxx", 2);
 ```
 
@@ -134,10 +134,10 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.xxxx);
 
-    // 使用する動画リワードと全画面インタースティシャルの全てのスポットIDについて、初期化処理を行います。
-    int[] spotIds = { 1, 2 };
-    AdstirVideoAds.init(this, "MEDIA-xxxxxx", spotIds);
-    // スポットIDごとにインスタンスを生成します。ここでは1についてのみ生成します。
+    // 使用する動画リワードと全画面インタースティシャルの全ての枠Noについて、初期化処理を行います。
+    int[] spotNos = { 1, 2 };
+    AdstirVideoAds.init(this, "MEDIA-xxxxxx", spotNos);
+    // 枠Noごとにインスタンスを生成します。ここでは1についてのみ生成します。
     adstirInterstitial = new AdstirInterstitial(this, "MEDIA-xxxxxx", 1);
     // 上で定義したリスナーを登録します。
     adstirInterstitial.setAdstirInterstitialListener(listener);

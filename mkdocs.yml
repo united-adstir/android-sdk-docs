@@ -18,7 +18,7 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.16.4
+    adstir: 2.17.0
     applovin: 12.5.0
     imobile: 2.3.2
     ironsource: 8.1.2
@@ -31,90 +31,94 @@ extra:
 
 # CSSの設定
 extra_css:
-  - css/custom.css
+- css/custom.css
 
 # 拡張機能の設定
 markdown_extensions:
-  - admonition # 警告文出せるやつ
-  - footnotes
-  - pymdownx.superfences
-  - codehilite:
-      linenums: false
-  - meta
-  - toc:
-      slugify: !!python/name:pymdownx.slugs.uslugify
-      permalink: true
-      anchorlink: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.details
+- admonition # 警告文出せるやつ
+- footnotes
+- pymdownx.superfences
+- codehilite:
+    linenums: false
+- meta
+- toc:
+    slugify: !!python/name:pymdownx.slugs.uslugify
+    permalink: true
+    anchorlink: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.details
 
 nav:
-  - スタートガイド: index.md
-  - adstir:
-      - はじめに: adstir/index.md
-      - 初期設定:
-        - SDKの組み込み:
-          - Android Studioによる組み込み: adstir/init/android_studio_integration.md
-          - 手動組み込み: adstir/init/manual_integration.md
-      - 対応ネットワーク:
-        - 対応ネットワーク一覧: adstir/network/index.md
-        - AppLovin: adstir/network/applovin.md
-        - imobile: adstir/network/imobile.md
-        - ironSource: adstir/network/ironsource.md
-        - maio: adstir/network/maio.md
-        - TikTok: adstir/network/tiktok.md
-        - UnityAds: adstir/network/unityads.md
-        - Zucks: adstir/network/zucks.md
+- スタートガイド: index.md
+- adstir:
+  - はじめに: adstir/index.md
+  - 初期設定:
+    - SDKの組み込み:
+      - Android Studioによる組み込み: adstir/init/android_studio_integration.md
+      - 手動組み込み: adstir/init/manual_integration.md
+  - 対応ネットワーク:
+    - 対応ネットワーク一覧: adstir/network/index.md
+    - AppLovin: adstir/network/applovin.md
+    - imobile: adstir/network/imobile.md
+    - ironSource: adstir/network/ironsource.md
+    - maio: adstir/network/maio.md
+    - TikTok: adstir/network/tiktok.md
+    - UnityAds: adstir/network/unityads.md
+    - Zucks: adstir/network/zucks.md
 
-      - 広告の実装:
-        - バナー:
-          - バナー: adstir/ad/banner.md
-          - WebViewアプリでの配信: adstir/ad/banner/webview.md
-        - スワイプインタースティシャル: adstir/ad/swipe.md
-        - ネイティブ:
-          - ネイティブライクバナー: adstir/ad/native/native_banner.md
-          - フルカスタマイズ: adstir/ad/native/custom.md
-        - 動画リワード: adstir/ad/reward/index.md
-        - 全画面インタースティシャル: adstir/ad/interstitial.md
-      - APIリファレンス:
-        - 一覧: adstir/api/index.md
-        - バナー:
-          - AdstirMraidView: adstir/api/banner/AdstirMraidView-Class-Reference.md
-          - AdSize: adstir/api/banner/AdSize-Class-Reference.md
-          - Listener: adstir/api/banner/Listener-Class-Reference.md
-        - スワイプインタースティシャル:
-          - AdstirFullscreenView: adstir/api/swipe/AdstirFullscreenView-Class-Reference.md
-          - AdstirFullscreenListener: adstir/api/swipe/AdstirFullscreenListener-Class-Reference.md
-        - ネイティブ:
-          - AdstirNativeAd: adstir/api/native/AdstirNativeAd-Class-Reference.md
-          - AdstirNativeAdListener: adstir/api/native/AdstirNativeAdListener-Interface-Reference.md
-          - AdstirNativeAdResponse: adstir/api/native/AdstirNativeAdResponse-Class-Reference.md
-          - AdstirLoadImageListener: adstir/api/native/AdstirLoadImageListener-Interface-Reference.md
-          - AdstirLoadIconListener: adstir/api/native/AdstirLoadIconListener-Interface-Reference.md
-        - 動画リワード/全画面インタースティシャルの初期化:
-          - AdstirVideoAds: adstir/api/AdstirVideoAds-Class-Reference.md
-        - 動画リワード:
-          - AdstirVideoReward: adstir/api/reward/AdstirVideoReward-Class-Reference.md
-          - AdstirVideoRewardListener: adstir/api/reward/AdstirVideoRewardListener-Interface-Reference.md
-        - 全画面インタースティシャル:
-          - AdstirInterstitial: adstir/api/interstitial/AdstirInterstitial-Class-Reference.md
-          - AdstirInterstitialListener: adstir/api/interstitial/AdstirInterstitialListener-Interface-Reference.md
-      - テストスイート: adstir/testsuite/index.md
-      - その他:
-        - よくある質問: adstir/info/question.md
-        - adstir SDKのGoogle Play データ セーフティ セクション: adstir/info/safety_section.md
-        - 提携対応ネットワークのGoogle Play データ セーフティ セクション: adstir/info/nw_safety_section.md
-  - AdMob:
-      - はじめに: admob/index.md
-      - AdMob配信設定: admob/setting.md
-      - よくある質問: admob/question.md
-  - AdManager:
-      - はじめに: admanager/index.md
-  - MAX:
-      - はじめに: max/index.md
-  - 変更履歴: changelog.md
+  - 広告の実装:
+    - バナー:
+      - バナー: adstir/ad/banner.md
+      - WebViewアプリでの配信: adstir/ad/banner/webview.md
+    - スワイプインタースティシャル: adstir/ad/swipe.md
+    - ネイティブ:
+      - ネイティブライクバナー: adstir/ad/native/native_banner.md
+      - フルカスタマイズ: adstir/ad/native/custom.md
+    - 動画リワード: adstir/ad/reward/index.md
+    - 全画面インタースティシャル: adstir/ad/interstitial.md
+    - アプリ起動時広告: adstir/ad/appopen.md
+  - APIリファレンス:
+    - 一覧: adstir/api/index.md
+    - バナー:
+      - AdstirMraidView: adstir/api/banner/AdstirMraidView-Class-Reference.md
+      - AdSize: adstir/api/banner/AdSize-Class-Reference.md
+      - Listener: adstir/api/banner/Listener-Class-Reference.md
+    - スワイプインタースティシャル:
+      - AdstirFullscreenView: adstir/api/swipe/AdstirFullscreenView-Class-Reference.md
+      - AdstirFullscreenListener: adstir/api/swipe/AdstirFullscreenListener-Class-Reference.md
+    - ネイティブ:
+      - AdstirNativeAd: adstir/api/native/AdstirNativeAd-Class-Reference.md
+      - AdstirNativeAdListener: adstir/api/native/AdstirNativeAdListener-Interface-Reference.md
+      - AdstirNativeAdResponse: adstir/api/native/AdstirNativeAdResponse-Class-Reference.md
+      - AdstirLoadImageListener: adstir/api/native/AdstirLoadImageListener-Interface-Reference.md
+      - AdstirLoadIconListener: adstir/api/native/AdstirLoadIconListener-Interface-Reference.md
+    - 動画リワード/全画面インタースティシャルの初期化:
+      - AdstirVideoAds: adstir/api/AdstirVideoAds-Class-Reference.md
+    - 動画リワード:
+      - AdstirVideoReward: adstir/api/reward/AdstirVideoReward-Class-Reference.md
+      - AdstirVideoRewardListener: adstir/api/reward/AdstirVideoRewardListener-Interface-Reference.md
+    - 全画面インタースティシャル:
+      - AdstirInterstitial: adstir/api/interstitial/AdstirInterstitial-Class-Reference.md
+      - AdstirInterstitialListener: adstir/api/interstitial/AdstirInterstitialListener-Interface-Reference.md
+    - アプリ起動時広告:
+      - AdstirAppOpenAd: adstir/api/appopen/AdstirAppOpenAd-Class-Reference.md
+      - AdstirAppOpenAdListener: adstir/api/appopen/AdstirAppOpenAdListener-Interface-Reference.md
+  - テストスイート: adstir/testsuite/index.md
+  - その他:
+    - よくある質問: adstir/info/question.md
+    - adstir SDKのGoogle Play データ セーフティ セクション: adstir/info/safety_section.md
+    - 提携対応ネットワークのGoogle Play データ セーフティ セクション: adstir/info/nw_safety_section.md
+- AdMob:
+  - はじめに: admob/index.md
+  - AdMob配信設定: admob/setting.md
+  - よくある質問: admob/question.md
+- AdManager:
+  - はじめに: admanager/index.md
+- MAX:
+  - はじめに: max/index.md
+- 変更履歴: changelog.md
 
 plugins:
-  - search
-  - markdownextradata: {}
+- search
+- markdownextradata: {}
