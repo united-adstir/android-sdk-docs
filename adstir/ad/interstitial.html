@@ -733,6 +733,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="appopen.html" title="アプリ起動時広告" class="md-nav__link">
+      アプリ起動時広告
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1093,6 +1105,54 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5-8" type="checkbox" id="nav-2-5-8">
+    
+    <label class="md-nav__link" for="nav-2-5-8">
+      アプリ起動時広告
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-5-8">
+        アプリ起動時広告
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/appopen/AdstirAppOpenAd-Class-Reference.html" title="AdstirAppOpenAd" class="md-nav__link">
+      AdstirAppOpenAd
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/appopen/AdstirAppOpenAdListener-Interface-Reference.html" title="AdstirAppOpenAdListener" class="md-nav__link">
+      AdstirAppOpenAdListener
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1432,14 +1492,14 @@
 <h2 id="広告の設定"><a class="toclink" href="#広告の設定">広告の設定</a><a class="headerlink" href="#広告の設定" title="Permanent link">&para;</a></h2>
 <h3 id="1動画広告の初期化を行う"><a class="toclink" href="#1動画広告の初期化を行う">1.動画広告の初期化を行う</a><a class="headerlink" href="#1動画広告の初期化を行う" title="Permanent link">&para;</a></h3>
 <p>はじめ、<code>AdstirVideoAds.init()</code>を使い、プロジェクトで利用する全ての動画広告の初期化を同時に行います。　　<a href="reward/index.html">動画リワード広告</a>と全画面インタースティシャル広告を併用する場合は、同時に初期化を行う必要があります。</p>
-<div class="codehilite"><pre><span></span><span class="c1">// 使用する動画リワードと全画面インタースティシャルの全てのスポットIDについて、初期化処理を行います。</span>
-<span class="kt">int</span><span class="o">[]</span> <span class="n">spotIds</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">};</span>
-<span class="n">AdstirVideoAds</span><span class="p">.</span><span class="na">init</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">&quot;MEDIA-xxxxxx&quot;</span><span class="p">,</span> <span class="n">spotIds</span><span class="p">);</span>
+<div class="codehilite"><pre><span></span><span class="c1">// 使用する動画リワードと全画面インタースティシャルの全ての枠Noについて、初期化処理を行います。</span>
+<span class="kt">int</span><span class="o">[]</span> <span class="n">spotNos</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">};</span>
+<span class="n">AdstirVideoAds</span><span class="p">.</span><span class="na">init</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">&quot;MEDIA-xxxxxx&quot;</span><span class="p">,</span> <span class="n">spotNos</span><span class="p">);</span>
 </pre></div>
 
 <h3 id="2全画面インタースティシャル広告のインスタンスを生成"><a class="toclink" href="#2全画面インタースティシャル広告のインスタンスを生成">2.全画面インタースティシャル広告のインスタンスを生成</a><a class="headerlink" href="#2全画面インタースティシャル広告のインスタンスを生成" title="Permanent link">&para;</a></h3>
 <p><code>AdstirInterstitial</code>のインスタンスを生成します。
-<div class="codehilite"><pre><span></span><span class="c1">// スポットIDごとにインスタンスを生成します。ここでは1についてのみ生成します。</span>
+<div class="codehilite"><pre><span></span><span class="c1">// 枠Noごとにインスタンスを生成します。ここでは2についてのみ生成します。</span>
 <span class="n">AdstirInterstitial</span> <span class="n">adstirInterstitial</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AdstirInterstitial</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">&quot;MEDIA-xxxxxx&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
 </pre></div></p>
 <h3 id="3リスナーの生成"><a class="toclink" href="#3リスナーの生成">3.リスナーの生成</a><a class="headerlink" href="#3リスナーの生成" title="Permanent link">&para;</a></h3>
@@ -1538,10 +1598,10 @@
     <span class="kd">super</span><span class="p">.</span><span class="na">onCreate</span><span class="p">(</span><span class="n">savedInstanceState</span><span class="p">);</span>
     <span class="n">setContentView</span><span class="p">(</span><span class="n">R</span><span class="p">.</span><span class="na">layout</span><span class="p">.</span><span class="na">xxxx</span><span class="p">);</span>
 
-    <span class="c1">// 使用する動画リワードと全画面インタースティシャルの全てのスポットIDについて、初期化処理を行います。</span>
-    <span class="kt">int</span><span class="o">[]</span> <span class="n">spotIds</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">};</span>
-    <span class="n">AdstirVideoAds</span><span class="p">.</span><span class="na">init</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">&quot;MEDIA-xxxxxx&quot;</span><span class="p">,</span> <span class="n">spotIds</span><span class="p">);</span>
-    <span class="c1">// スポットIDごとにインスタンスを生成します。ここでは1についてのみ生成します。</span>
+    <span class="c1">// 使用する動画リワードと全画面インタースティシャルの全ての枠Noについて、初期化処理を行います。</span>
+    <span class="kt">int</span><span class="o">[]</span> <span class="n">spotNos</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">};</span>
+    <span class="n">AdstirVideoAds</span><span class="p">.</span><span class="na">init</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">&quot;MEDIA-xxxxxx&quot;</span><span class="p">,</span> <span class="n">spotNos</span><span class="p">);</span>
+    <span class="c1">// 枠Noごとにインスタンスを生成します。ここでは1についてのみ生成します。</span>
     <span class="n">adstirInterstitial</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AdstirInterstitial</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="s">&quot;MEDIA-xxxxxx&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
     <span class="c1">// 上で定義したリスナーを登録します。</span>
     <span class="n">adstirInterstitial</span><span class="p">.</span><span class="na">setAdstirInterstitialListener</span><span class="p">(</span><span class="n">listener</span><span class="p">);</span>
