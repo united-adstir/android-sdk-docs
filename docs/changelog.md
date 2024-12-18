@@ -1,5 +1,10 @@
 # 変更履歴
 
+## v2.17.2 (2024/12/18)
+
+* bundle SDKの更新
+    * [ironSource 8.5.0](https://developers.is.com/ironsource-mobile/android/sdk-change-log/)
+
 ## v2.17.1 (2024/11/26)
 
 * 動画リワード広告、全画面インタースティシャル広告、アプリ起動時広告の安定性向上
