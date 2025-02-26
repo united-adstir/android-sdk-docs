@@ -18,7 +18,7 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.17.2
+    adstir: 2.17.3
     applovin: 12.5.0
     imobile: 2.3.2
     ironsource: 8.5.0
