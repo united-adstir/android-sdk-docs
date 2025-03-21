@@ -18,7 +18,7 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.17.3
+    adstir: 2.17.4
     applovin: 12.5.0
     imobile: 2.3.2
     ironsource: 8.5.0
@@ -26,7 +26,7 @@ extra:
     tiktok: 6.2.0.7
     unityads: 4.12.1
     zucks: 6.0.1
-    google: 23.2.0
+    google: 24.0.0
   sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.17.1-SampleApp.zip'
 
 # CSSの設定
