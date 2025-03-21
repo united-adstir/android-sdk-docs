@@ -3,7 +3,7 @@
 ## 前提条件
 
 - Android Studio 3.2以上
-- minSdkVersion 21以上
+- minSdkVersion 23以上
 - compileSdkVersion 34以上
 - AndroidX 必須
 

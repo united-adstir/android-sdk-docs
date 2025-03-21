@@ -2,7 +2,7 @@
 
 ## 対応OS
 
-Android 5.0以上
+Android 6.0以上
 
 ## SDKの組み込み
 
