@@ -1,5 +1,15 @@
 # 変更履歴
 
+## v2.17.5 (2025/11/06)
+
+* API変更に伴うMaioアダプタの修正
+* bundle SDKの更新
+    * [Maio 2.0.7](https://github.com/imobile/MaioSDK-v2-Android/releases/tag/v2.0.7)
+    * TikTok 7.7.0.2
+    * [UnityAds 4.16.3](https://docs.unity.com/en-us/grow/ads/changelog#version-4163---released-2025-10-10)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 24.7.0
+
 ## v2.17.4 (2025/03/21)
 
 * Android OSの最小サポートバージョンを6.0(APIレベル23)に変更
