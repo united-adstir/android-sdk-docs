@@ -1,5 +1,13 @@
 # 変更履歴
 
+## v2.17.6 (2025/12/12)
+
+* API変更に伴うironSourceアダプタの修正
+* スワイプインタースティシャル広告のAPIを非推奨に変更
+    * こちらの広告フォーマットは廃止予定になります
+* bundle SDKの更新
+    * [ironSource 9.2.0](https://developers.is.com/ironsource-mobile/android/sdk-change-log/)
+
 ## v2.17.5 (2025/11/06)
 
 * API変更に伴うMaioアダプタの修正
