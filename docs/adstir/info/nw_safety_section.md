@@ -27,10 +27,6 @@
 
 * [Google Play data safety section for Unity Ads](https://docs.unity.com/ads/GoogleDataSafety.html)
 
-## Zucks
-
-* [Google Play データ セーフティ セクションについて](https://ms.zucksadnetwork.com/media/sdk/manual/android/#dataSafetySection)
-
 ## AdMob/AdManagerをご利用の方
 
 * [Google Play のデータ開示要件に備える](https://developers.google.com/admob/android/play-data-disclosure)

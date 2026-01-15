@@ -8,11 +8,6 @@ adstir SDKのAPIリファレンスです。
 * [AdSize](banner/AdSize-Class-Reference.md)
 * [Listener](banner/Listener-Class-Reference.md)
 
-## スワイプインタースティシャル広告
-
-* [AdstirFullscreenView](swipe/AdstirFullscreenView-Class-Reference.md)
-* [AdstirFullscreenListener](swipe/AdstirFullscreenListener-Class-Reference.md)
-
 ## ネイティブ広告
 
 * [AdstirNativeAd](native/AdstirNativeAd-Class-Reference.md)
