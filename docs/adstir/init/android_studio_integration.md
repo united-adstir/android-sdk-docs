@@ -68,24 +68,3 @@ dependencies {
     implementation "com.ad-stir.mediationadapter:adstir-mediationadapter:${adstir_version}"
 }
 ```
-
-#### スワイプインタースティシャル広告
-
-下記の設定で、動画リワード・全画面インタースティシャル広告に対応したメディエーションアダプタが一括で導入されます。
-
-アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定します。
-
-```groovy hl_lines="8 12"
-repositories {
-    google()
-    mavenCentral()
-    maven { url 'https://cdnp.ad-stir.com/m2' }
-    maven { url 'https://github.com/zucks/ZucksAdNetworkSDK-Maven/raw/master/' } // Zucks
-}
-
-dependencies {
-    // 利用するadstirのSDKバージョンを設定します
-    def adstir_version = "{{version.adstir}}"
-    implementation "com.ad-stir.mediationadapter:adstir-mediationadapter-zucks:${adstir_version}"
-}
-```

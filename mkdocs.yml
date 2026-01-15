@@ -18,16 +18,15 @@ use_directory_urls: false
 extra:
   language: 'jp'
   version:
-    adstir: 2.17.6
+    adstir: 2.17.7
     applovin: 12.5.0
     imobile: 2.3.2
     ironsource: 9.2.0
     maio: 2.0.7
     tiktok: 7.7.0.2
     unityads: 4.16.3
-    zucks: 6.0.1
     google: 24.7.0
-  sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.17.1-SampleApp.zip'
+  sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkAndroid-2.17.7-SampleApp.zip'
 
 # CSSの設定
 extra_css:
@@ -65,13 +64,11 @@ nav:
     - maio: adstir/network/maio.md
     - TikTok: adstir/network/tiktok.md
     - UnityAds: adstir/network/unityads.md
-    - Zucks: adstir/network/zucks.md
 
   - 広告の実装:
     - バナー:
       - バナー: adstir/ad/banner.md
       - WebViewアプリでの配信: adstir/ad/banner/webview.md
-    - スワイプインタースティシャル: adstir/ad/swipe.md
     - ネイティブ:
       - ネイティブライクバナー: adstir/ad/native/native_banner.md
       - フルカスタマイズ: adstir/ad/native/custom.md
@@ -84,9 +81,6 @@ nav:
       - AdstirMraidView: adstir/api/banner/AdstirMraidView-Class-Reference.md
       - AdSize: adstir/api/banner/AdSize-Class-Reference.md
       - Listener: adstir/api/banner/Listener-Class-Reference.md
-    - スワイプインタースティシャル:
-      - AdstirFullscreenView: adstir/api/swipe/AdstirFullscreenView-Class-Reference.md
-      - AdstirFullscreenListener: adstir/api/swipe/AdstirFullscreenListener-Class-Reference.md
     - ネイティブ:
       - AdstirNativeAd: adstir/api/native/AdstirNativeAd-Class-Reference.md
       - AdstirNativeAdListener: adstir/api/native/AdstirNativeAdListener-Interface-Reference.md
