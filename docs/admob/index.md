@@ -3,8 +3,8 @@
 ## 前提条件
 
 - Android Studio 3.2以上
-- minSdkVersion 23以上
-- compileSdkVersion 34以上
+- minSdkVersion 24以上
+- compileSdkVersion 35以上
 - AndroidX 必須
 
 !!! Info
@@ -12,14 +12,12 @@
 
 ## 事前準備
 
-[AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。
-AdMobアダプタはGoogle Mobile Ads SDK version {{ version.google }}でビルドおよびテストを行なっています。
+[AdMobのスタートガイド](https://developers.google.com/admob/android/next-gen/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。
+AdMobアダプタはGoogle Mobile Ads SDK version {{ version.google }}でビルドし、Google Mobile Ads SDK version {{ version.google }} および、GMA Next-Gen SDK version {{ version.gma_next_gen }}にてテストを行なっております。
 
 ### メディエーションの準備
 
-[AdMobメディエーション](https://developers.google.com/admob/android/mediate?hl=ja)を行うために、アドネットワークのSDKとアダプターをプロジェクトへ導入します。
-
-#### Android Studioで導入する場合
+[AdMobメディエーション](https://developers.google.com/admob/android/next-gen/mediation?hl=ja)を行うために、アドネットワークのSDKとアダプターをプロジェクトへ導入します。
 
 アプリケーションレベルのbuild.gradleにmavenリポジトリと依存関係を設定することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
@@ -49,24 +47,24 @@ dependencies {
 }
 ```
 
-#### 手動で導入する場合
 
-1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込みます
-    * バナー広告のみをご利用される場合は営業担当までお問い合わせください
-1. [AdMobのスタートガイド](https://developers.google.com/admob/android/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを入れます
+GMA Next Gen SDKを利用する場合は`play-services-ads`モジュールと`play-services-ads-lite`モジュールの両方をすべての依存関係から除外します。
+
+```groovy hl_lines="1 4"
+configurations.configureEach {
+    exclude(group = "com.google.android.gms", module = "play-services-ads")
+    exclude(group = "com.google.android.gms", module = "play-services-ads-lite")
+}
+```
 
 ## 広告の実装
 
 AdMobの実装ガイドをご覧ください
 
-* [バナー](https://developers.google.com/admob/android/banner?hl=ja)
-* [インタースティシャル](https://developers.google.com/admob/android/interstitial?hl=ja)
-* [ネイティブ](https://developers.google.com/admob/android/native/start?hl=ja)
-* [動画リワード](https://developers.google.com/admob/android/rewarded-ads?hl=ja)
-* [アダプティブバナー](https://developers.google.com/admob/android/banner/adaptive?hl=ja)
-
-    !!! warning
-        アダプティブバナーを実装する場合は、最新バージョンのGoogle Mobile Ads SDK をご利用ください。
+* [バナー](https://developers.google.com/admob/android/next-gen/banner?hl=ja)
+* [インタースティシャル](https://developers.google.com/admob/android/next-gen/interstitial?hl=ja)
+* [ネイティブ](https://developers.google.com/admob/android/next-gen/native?hl=ja)
+* [動画リワード](https://developers.google.com/admob/android/next-gen/rewarded?hl=ja)
 
 ### テストデバイスの追加
 [開発時にはテスト端末を追加する](https://developers.google.com/admob/android/test-ads?hl=ja#add_your_test_device)より、広告リクエスト時にデバイスIDの設定をおこなってください。
